@@ -4,11 +4,14 @@
 }
 
 @font-face {
-  font-family: Inter; src: url('./static/Inter-Light.ttf');
+  font-family: Inter;
+  src: url('./static/Inter-Light.ttf');
 } 
 
 @font-face {
-  font-family: Inter; font-weight: bold; src: url('./static/Inter-Bold.ttf');
+  font-family: Inter;
+  font-weight: bold;
+  src: url('./static/Inter-Bold.ttf');
 }
 
 * {
@@ -16,17 +19,30 @@
   font-family: Inter, sans-serif;
   font-style: normal;
 }
-  
+
 span {
   color: var(--text-green);
 }
-  /* As we see in fring template, when we have a mobile device, the nav tag
+
+/* As we see in fring template, when we have a mobile device, the nav tag
   is before the #main part, and it have space around
-  */
+*/
+
 #smallScreen {
   display: flex;
   justify-content: space-around;
   width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-color1);
+}
+
+section.icon > ul > li > a {
+  height: 20px;
+  padding: 8px;
+  color: #505f79;
 }
 
 #smallScreen > a {
@@ -45,10 +61,12 @@ span {
   height: 100%;
 }
 
-.c1, .c2, .c3 {
+.c1,
+.c2,
+.c3 {
   width: 16px;
   border: 2px solid #28352f;
-  background-color: #acb7c3;;
+  background-color: #acb7c3;
   margin: 2.5px 0;
 }
 
@@ -62,16 +80,14 @@ span {
   display: flex;
   flex-direction: column;
 }
+
 nav.navigation {
   display: none;
 }
 
-a {
-  text-decoration: none;
-  color: var(--text-color1);
-}
 /* the container of text and icon
 */
+
 div.headline {
   height: 80%;
   width: 80%;
@@ -119,12 +135,6 @@ section.icon > ul {
   align-items: center;
   width: 200px;
   height: 40px;
-}
-
-section.icon > ul > li > a {
-  height: 20px;
-  padding: 8px;
-  color: #505f79;
 }
 
 section.action {
