@@ -14,46 +14,67 @@
     <link rel="stylesheet" href="styles2.css">
 </head>
 <body>
-    <div id="smallScreen">
-        <span><a href=""></a>Welcome</span>
-        <span><a href=""><i class="fa fa-align-justify"></i></a></span>
-    </div>
-    <div id="main">
-        <div class="navigation">
-            <nav><ul>
+    <!--For small screen, this will be display when the screen is less than 768px-->
+    <header id="smallScreen">
+        <a href="">Welcome</a>
+        <nav>
+            <div class="c1"> </div>
+            <div class="c2"> </div>
+            <div class="c3"> </div>
+        </nav>
+    </header>
+    <main id="main">
+        <!--For big screen, this will be hide when screen is less than 768px(just navigation)--> 
+        <nav class="navigation">
+            <ul>
                 <li><a href="#">Portoflio</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Contact</a></li>
-            </ul></nav>
-        </div>
+            </ul>
+        </nav>
+        
         <div class="headline">
-            <p class="header">
-                <h2>Hey there. I’m Franck sefu.<br>
-                <span>I’m a software developer</span></h2>
-            </p>
-            <p class="content">
-                I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, 
+            <header class="header">
+                <h1>Hey there. I’m Franck sefu.<br>
+                <span>I’m a software developer</span></h1>
+            </header>
+            <section class="content">
+                <p>
+                    I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, 
                 don’t hestiate to contact me.
-            </p>
-            <div class="icon">
-                <a href="https://www.facebook.com/franck.sefu/">
-                  <i class="fab fa-facebook-f"></i>
-                </a>
-                <a href="https://twitter.com/franck_sefu">
-                  <i class="fab fa-twitter"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/franck-sefu-884705254/">
-                  <i class="fab fa-linkedin-in"></i>
-                </a>
-                <a href="https://github.com/francksefu">
-                    <i class="fab fa-github"></i>
-                  </a>
-            </div>
-            <p class="action">
+                </p>
+            </section>
+            <section class="icon">
+                <ul>
+                    
+                    <li>
+                        <a href="https://www.facebook.com/franck.sefu/">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/franck_sefu">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/franck-sefu-884705254/">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/francksefu">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </li>
+                </ul>
+                
+            </section>
+            <section class="action">
                 <button><img src="Disabled.png" id="img"></button>
-            </p>
+            </section>
         </div>
-    </div>
+    </main>
     
 </body>
 </html>
