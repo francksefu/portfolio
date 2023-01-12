@@ -1,8 +1,7 @@
 <a name="readme-top"></a>
 <div align="center">
   <!-- You are encouraged to replace this logo with your own! Otherwise you can also remove it. -->
-  <img src="https://raw.githubusercontent.com/microverseinc/readme-template/master/murple_logo.png" alt="logo" width="140"  height="auto" />
-  <br/>
+  
   
 </div>
 
@@ -56,8 +55,8 @@
 
 <!-- GETTING STARTED -->
 ## 💻 Getting Started <a name="getting-started"></a>
-> To do the same as this project, use the template as pattern, after build the same as you in the template.
-Use the template for the portfolio, you will find it at Fring
+> To do the same as this project, use the template as pattern, after build the same as you see in the template. Or see and try to write the samethings 
+
 
 ### Setup
 Clone this repository to your desired folder:
@@ -80,7 +79,7 @@ To run the project, open the html folder in your navigator
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 <!-- FUTURE FEATURES -->
 ## 🔭 Future Features <a name="future-features">Make it dynamic</a>
-> Describe 1 - 3 features you will add to the project.
+> 
 - In the soon future, I will every project I will make, and describe it, and add the link for it.
 -certainly I will make this page dynamic in using javaSript
 - And every day I will make it pretty
