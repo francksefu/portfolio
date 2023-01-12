@@ -1,122 +1,75 @@
 :root {
-  --text-color1: #172b4d;
-  --text-green: #36b37f;
-}
+    --text-color1: #172b4d;
+    --text-green: #36b37f;
+  }
 
-* {
-  box-sizing: border-box;
-  font-family: sans-serif;
-  font-style: normal;
-}
+  @font-face { font-family: Inter; src: url('./static/Inter-Light.ttf'); } 
+  @font-face { font-family: Inter; font-weight: bold; src: url('./static/Inter-Bold.ttf');}
+  
+  * {
+    box-sizing: border-box;
+    font-family: Inter, sans-serif;
+    font-style: normal;
+  }
+  
+  span {
+    color: var(--text-green);
+  }
+  /*As we see in fring template, when we have a mobile device, the nav tag
+  is before the #main part, and it have space around
+  */
+  #smallScreen {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+  }
+  
+  #smallScreen > a {
+    width: 90px;
+    height: 48px;
+    float: left;
+    color: #28352f;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
+    margin-left: 10px 12px;
+  }
+  
+  #smallScreen > nav {
+    width: 16px;
+    height: 100%;
+  }
 
-span {
-  color: var(--text-green);
-}
-
-#smallScreen {
-  display: flex;
-  justify-content: space-around;
-}
-
-#smallScreen > span {
-  color: var(--text-color1);
-  font-size: 20px;
-  line-height: 28px;
-}
-
-#main {
-  width: 100vw;
-  height: 100vh;
-  background-image: url(Header-llustration-desktop.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  display: flex;
-  flex-direction: column;
-}
-
-nav {
-  display: none;
-}
-
-a {
-  text-decoration: none;
-  color: var(--text-color1);
-}
-
-div.headline {
-  height: 80%;
-  width: 80%;
-  margin-left: 10%;
-  margin-top: 5%;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-}
-
-p {
-  width: 80%;
-  text-align: center;
-  margin: 0 auto;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 28px;
-}
-
-h2 {
-  text-align: center;
-  color: var(--text-color1);
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 52px;
-}
-
-div.icon {
-  margin: 40px auto;
-  font-size: 20px;
-}
-
-div.icon > a {
-  margin: 0 5px;
-}
-
-button {
-  border: none;
-  margin-top: 58px;
-}
-
-@media only screen and (min-width: 768px) {
+ /* #smallScreen > nav {
+    width: 16px;
+  }*/
+  .c1, .c2, .c3 {
+    width: 16px;
+    border: 2px solid #28352f;
+    background-color: #acb7c3;;
+    margin: 2.5px 0;
+  }
+  
   #main {
     width: 100vw;
     height: 100vh;
     background-image: url(Header-llustration-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     display: flex;
     flex-direction: column;
   }
-
-  #smallScreen {
+  
+  nav.navigation {
     display: none;
   }
-
-  nav {
-    display: block;
-  }
-
-  nav > ul {
-    display: flex;
-    justify-content: center;
-  }
-
-  nav > ul > li {
-    list-style: none;
-    margin: 10px;
-  }
-
+  
   a {
     text-decoration: none;
     color: var(--text-color1);
   }
-
+  /*the container of text and icon*/
   div.headline {
     height: 80%;
     width: 80%;
@@ -127,32 +80,118 @@ button {
     justify-content: flex-start;
   }
 
+  ul {
+    display: flex;
+    justify-content: center;
+  }
+
+  ul > li {
+    list-style: none;
+  }
+  
   p {
-    width: 80%;
+    width: 90%;
+    height: 164px;
     text-align: center;
-    margin-left: 10%;
+    margin: 0 auto;
     font-weight: 400;
     font-size: 20px;
-    line-height: 32px;
+    line-height: 28px;
   }
-
-  h2 {
+  
+  h1 {
     text-align: center;
     color: var(--text-color1);
-    font-weight: 800;
-    font-size: 48px;
-    line-height: 60px;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+  }
+  
+  section.icon {
+    margin: 40px auto;
   }
 
-  span {
-    color: var(--text-green);
+  section.icon > ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 200px;
+    height: 40px; 
+  }
+  
+  section.icon > ul > li > a {
+    height: 20px;
+    padding: 8px;
+    color: #505f79;;
   }
 
-  p.icon > a {
-    margin-left: 2%;
+  section.action {
+    margin: 0 auto;
   }
 
   button {
     border: none;
+    margin-top: 58px;
   }
-}
+  
+  @media only screen and (min-width: 768px) {
+    #main {
+      width: 100vw;
+      height: 100vh;
+      background-image: url(Header-llustration-desktop.svg);
+      display: flex;
+      flex-direction: column;
+    }
+  
+    #smallScreen {
+      display: none;
+    }
+  
+    nav.navigation {
+      display: block;
+    }
+  
+    nav.navigation > ul > li {
+      margin: 10px;
+    }
+  
+    a {
+      text-decoration: none;
+      color: var(--text-color1);
+    }
+  
+    div.headline {
+      height: 80%;
+      width: 80%;
+      margin-left: 10%;
+      margin-top: 5%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+  
+    p {
+      width: 80%;
+      text-align: center;
+      margin-left: 10%;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 32px;
+    }
+  
+    h1 {
+      text-align: center;
+      color: var(--text-color1);
+      font-weight: 800;
+      font-size: 48px;
+      line-height: 60px;
+    }
+  
+    span {
+      color: var(--text-green);
+    }
+  
+    section.icon > a {
+      margin-left: 2%;
+    }
+  }
