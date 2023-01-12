@@ -93,24 +93,30 @@ button {
     display: flex;
     flex-direction: column;
   }
+
   #smallScreen {
     display: none;
-  } 
+  }
+
   nav {
     display: block;
   }
+
   nav > ul {
     display: flex;
     justify-content: center;
   }
+
   nav > ul > li {
     list-style: none;
     margin: 10px;
   }
+
   a {
     text-decoration: none;
     color: var(--text-color1);
   }
+
   div.headline {
     height: 80%;
     width: 80%;
@@ -120,6 +126,7 @@ button {
     flex-direction: column;
     justify-content: flex-start;
   }
+
   p {
     width: 80%;
     text-align: center;
@@ -128,6 +135,7 @@ button {
     font-size: 20px;
     line-height: 32px;
   }
+
   h2 {
     text-align: center;
     color: var(--text-color1);
@@ -135,12 +143,15 @@ button {
     font-size: 48px;
     line-height: 60px;
   }
+
   span {
     color: var(--text-green);
   }
+
   p.icon > a {
     margin-left: 2%;
   }
+
   button {
     border: none;
   }
