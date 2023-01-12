@@ -1,41 +1,123 @@
-:root{
-    --text-color1 : #172B4D;
-    --text-green : #36B37F;
+:root {
+  --text-color1: #172B4D;
+  --text-green: #36B37F;
 }
-*{
-    box-sizing: border-box;
-    font-family: 'Inter';
-    font-style: normal;
+
+* {
+  box-sizing: border-box;
+  font-family: 'Inter';
+  font-style: normal;
 }
+
 #smallScreen {
-    display: flex;
-    justify-content: space-around;
+  display: flex;
+  justify-content: space-around;
 }
+
 #smallScreen>span{
-    color: var(--text-color1);
-    font-size: 20px;
-    line-height: 28px;
+  color: var(--text-color1);
+  font-size: 20px;
+  line-height: 28px;
 }
 
 #main {
-    width: 100vw;
-    height: 100vh;
-    background-image: url(Header-llustration-desktop.svg);
-   background-repeat: no-repeat;
-   background-position: center;
-   background-size: cover;
-    display: flex;
-    flex-direction: column;  
+  width: 100vw;
+  height: 100vh;
+  background-image: url(Header-llustration-desktop.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;  
 }
-nav{
-    display: none;
+
+nav {
+  display: none;
 }
 
 a {
+  text-decoration: none;
+  color: var(--text-color1);
+}
+
+div.headline {
+  height: 80%;
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+p {
+  width: 80%;
+  text-align: center;
+  margin:0 auto;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+h2 {
+  text-align: center;
+  color: var(--text-color1);
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+}
+
+span {
+  color: var(--text-green);
+}
+
+div.icon {
+  margin:40px auto;
+  font-size: 20px;
+}
+
+div.icon > a {
+  margin: 0 5px;
+}
+
+button {
+  border: none;
+  margin-top: 58px;
+    
+}
+@media only screen and (min-width: 768px) {
+  #main {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(Header-llustration-desktop.svg);
+    display: flex;
+    flex-direction: column;
+  }
+    
+  #smallScreen {
+    display: none;
+  }
+    
+  nav {
+    display: block;
+  }
+    
+  nav > ul {
+    display: flex;
+    justify-content: center;
+  }
+    
+  nav > ul > li {
+    list-style: none;
+    margin: 10px;
+  }
+
+  a {
     text-decoration: none;
     color: var(--text-color1);
-}
-div.headline {
+  }
+
+  div.headline {
     height: 80%;
     width: 80%;
     margin-left: 10%;
@@ -43,98 +125,34 @@ div.headline {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-}
-p{
+   }
+
+  p {
     width: 80%;
     text-align: center;
-    margin:0 auto;
+    margin-left: 10%;
     font-weight: 400;
     font-size: 20px;
-    line-height: 28px;
-}
-h2{
+    line-height: 32px;
+  }
+    
+  h2 {
     text-align: center;
     color: var(--text-color1);
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 52px;
-}
-span{
-    color: var(--text-green);
-}
-div.icon {
-    margin:40px auto;
-    font-size: 20px;
-}
-div.icon>a{
-    margin: 0 5px;
-}
-button{
-    border: none;
-    margin-top: 58px;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 60px;
+  }
     
-}
-@media only screen and (min-width: 768px) {
-    #main {
-        width: 100vw;
-        height: 100vh;
-        background-image: url(Header-llustration-desktop.svg);
-        display: flex;
-        flex-direction: column;
-    }
-    #smallScreen {
-        display: none;
-    }
-    nav {
-        display: block;
-    }
-    nav>ul {
-        display: flex;
-        justify-content: center;
-    }
-    nav>ul>li {
-        list-style: none;
-        margin: 10px;
-    }
-
-    a {
-        text-decoration: none;
-        color: var(--text-color1);
-    }
-
-    div.headline {
-        height: 80%;
-        width: 80%;
-        margin-left: 10%;
-        margin-top: 5%;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-    }
-
-    p{
-        width: 80%;
-        text-align: center;
-        margin-left: 10%;
-        font-weight: 400;
-        font-size: 20px;
-        line-height: 32px;
-    }
-    h2{
-        text-align: center;
-        color: var(--text-color1);
-        font-weight: 800;
-        font-size: 48px;
-        line-height: 60px;
-    }
-    span{
-        color: var(--text-green);
-    }
-    p.icon>a {
-        margin-left: 2%;
-    }
-    button{
-        border: none;
-    }
+  span {
+    color: var(--text-green);
+  }
+    
+  p.icon > a {
+    margin-left: 2%;
+  }
+  button {
+    border: none;
+  }
     
 }
