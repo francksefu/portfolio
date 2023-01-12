@@ -1,6 +1,6 @@
 :root {
-  --text-color1: #172B4D;
-  --text-green: #36B37F;
+  --text-color1: #172b4d;
+  --text-green: #36b37f;
 }
 
 * {
@@ -9,12 +9,16 @@
   font-style: normal;
 }
 
+span {
+  color: var(--text-green);
+}
+
 #smallScreen {
   display: flex;
   justify-content: space-around;
 }
 
-#smallScreen>span{
+#smallScreen > span {
   color: var(--text-color1);
   font-size: 20px;
   line-height: 28px;
@@ -28,7 +32,7 @@
   background-position: center;
   background-size: cover;
   display: flex;
-  flex-direction: column;  
+  flex-direction: column;
 }
 
 nav {
@@ -53,7 +57,7 @@ div.headline {
 p {
   width: 80%;
   text-align: center;
-  margin:0 auto;
+  margin: 0 auto;
   font-weight: 400;
   font-size: 20px;
   line-height: 28px;
@@ -67,12 +71,8 @@ h2 {
   line-height: 52px;
 }
 
-span {
-  color: var(--text-green);
-}
-
 div.icon {
-  margin:40px auto;
+  margin: 40px auto;
   font-size: 20px;
 }
 
@@ -82,9 +82,9 @@ div.icon > a {
 
 button {
   border: none;
-  margin-top: 58px;
-    
+  margin-top: 58px;   
 }
+
 @media only screen and (min-width: 768px) {
   #main {
     width: 100vw;
@@ -93,20 +93,20 @@ button {
     display: flex;
     flex-direction: column;
   }
-    
+  
   #smallScreen {
     display: none;
   }
-    
+  
   nav {
     display: block;
   }
-    
+  
   nav > ul {
     display: flex;
     justify-content: center;
   }
-    
+  
   nav > ul > li {
     list-style: none;
     margin: 10px;
@@ -125,7 +125,7 @@ button {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-   }
+  }
 
   p {
     width: 80%;
@@ -135,7 +135,7 @@ button {
     font-size: 20px;
     line-height: 32px;
   }
-    
+  
   h2 {
     text-align: center;
     color: var(--text-color1);
@@ -143,16 +143,16 @@ button {
     font-size: 48px;
     line-height: 60px;
   }
-    
+  
   span {
     color: var(--text-green);
   }
-    
+  
   p.icon > a {
     margin-left: 2%;
   }
+  
   button {
     border: none;
   }
-    
 }
