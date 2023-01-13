@@ -30,7 +30,7 @@ span {
 
 #smallScreen {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   width: 100%;
 }
 
@@ -88,7 +88,7 @@ nav.navigation {
 /* the container of text and icon
 */
 
-div.headline {
+section.headline {
   height: 80%;
   width: 80%;
   margin-left: 10%;
@@ -115,6 +115,7 @@ p {
   font-weight: 400;
   font-size: 20px;
   line-height: 28px;
+  color: #505f79;
 }
 
 h1 {
@@ -172,7 +173,7 @@ button {
     color: var(--text-color1);
   }
 
-  div.headline {
+  section.headline {
     height: 80%;
     width: 80%;
     margin-left: 10%;
