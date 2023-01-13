@@ -53,12 +53,13 @@ section.icon > ul > li > a {
   font-weight: 600;
   font-size: 20px;
   line-height: 28px;
-  margin-left: 10px 12px;
+  margin-left: 24px;
 }
 
 #smallScreen > nav {
   width: 16px;
   height: 100%;
+  margin-right: 36px;
 }
 
 .c1,
@@ -96,6 +97,7 @@ section.headline {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  
 }
 
 ul {
@@ -115,7 +117,7 @@ p {
   font-weight: 400;
   font-size: 20px;
   line-height: 28px;
-  color: #505f79;
+  color: #172b4d;
 }
 
 h1 {
