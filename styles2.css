@@ -219,7 +219,6 @@ div.detail > div.rHeader > h2 {
 
 section.recentWork > article {
   width: 90vw;
-  height: 90vh;
   border-radius: 8px;
   background-color: var(--dark-white);
   border: 1px solid #d0d9d4;
@@ -227,19 +226,28 @@ section.recentWork > article {
 
 section.recentWork > article > div {
   width: 100%;
-  height: 50%;
+}
+
+.vide {
+  margin-top: 0;
+  width: 100%;
+  height: 45vh;
 }
 
 section.recentWork > article > div.detail {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
   padding: 16px;
   gap: 16px;
   background: #fff;
   border-radius: 8px;
 }
 
+section.recentWork > article > div.detail > button {
+  margin-bottom: 8px;
+}
 /*
 section.recentWork > article > div.detail > ul
 */
