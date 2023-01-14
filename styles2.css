@@ -1,6 +1,9 @@
 :root {
   --text-color1: #172b4d;
-  --text-green: #36b37f;
+  --dark-green: #36b37f;
+  --dark-white: #ebf0ee;
+  --letter-colorRC: #3a4a42;
+  --h3title-color: #344563;
 }
 
 @font-face {
@@ -20,8 +23,9 @@
   font-style: normal;
 }
 
-span {
-  color: var(--text-green);
+main {
+  display: grid;
+  grid-template-columns: 1fr;
 }
 
 /* As we see in fring template, when we have a mobile device, the nav tag
@@ -145,10 +149,296 @@ section.action {
 
 button {
   border: none;
+}
+
+button:hover {
+  background: #36b37f;
+  box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
+  border-radius: 4px;
+}
+
+button:focus {
+  background: #008552;
+  border-radius: 4px;
+}
+
+button:enabled {
+  background: #36b37f;
+  border-radius: 4px;
+}
+
+section.headline > button {
   margin-top: 58px;
 }
 
-@media only screen and (min-width: 768px) {
+/*
+Second part of project
+*/
+
+section.recentWork {
+  width: 100vw;
+  height: auto;
+  padding: 64px 24px;
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  gap: 58px;
+}
+
+section.recentWork > div.rHeader {
+  width: 90vw;
+  height: auto;
+  padding: 0 auto;
+}
+
+section.recentWork > div.rHeader > h1 {
+  margin: 0 auto;
+}
+
+h2 {
+  text-align: center;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  color: var(--letter-colorRC);
+  padding: 0 auto;
+}
+
+div.detail > div.rHeader > h2 {
+  margin: 0 auto;
+}
+
+.bar {
+  width: 48px;
+  height: 4px;
+  background-color: var(--dark-green);
+  border-radius: 24px;
+  margin: 0 auto;
+  margin-top: 24px;
+}
+
+section.recentWork > article {
+  width: 90vw;
+  border-radius: 8px;
+  background-color: var(--dark-white);
+  border: 1px solid #d0d9d4;
+}
+
+section.recentWork > article > div {
+  width: 100%;
+}
+
+.vide {
+  margin-top: 0;
+  width: 100%;
+  height: 45vh;
+}
+
+section.recentWork > article > div.detail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px;
+  gap: 16px;
+  background: #fff;
+  border-radius: 8px;
+}
+
+article.text > button {
+  margin-bottom: 0;
+}
+
+section.recentWork > article > div.detail > button {
+  margin-bottom: 8px;
+}
+
+/*
+section.recentWork > article > div.detail > ul
+*/
+
+ul.language {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0;
+  gap: 8px;
+  width: 90%;
+}
+
+ul.language > li {
+  height: 32px;
+  padding: 8px 12px;
+  background-color: var(--dark-white);
+  border-radius: 4px;
+}
+
+button.buttonCol > span {
+  width: 98px;
+  height: 24px;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  color: white;
+  letter-spacing: 0.03em;
+}
+
+ul.language > li > span {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  color: var(--letter-colorRC);
+}
+
+.buttonCol {
+  background-color: var(--dark-green);
+  width: 122px;
+  height: 48px;
+  border-radius: 8px;
+}
+
+/*
+button state
+*/
+
+section.aboutMe {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 64px 24px;
+  gap: 58px;
+}
+
+article.text > button.buttonCol {
+  width: 159px;
+  margin-top: 24px;
+}
+
+section.aboutMe > article.text {
+  width: inherit;
+  background-image: url("illustration\ about\ me\ desktop\ \(2\).svg"), url(illustration-\ about\ me-\ mobile.svg);
+  background-repeat: no-repeat;
+  background-position: top right, bottom left;
+  background-size: contain;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  gap: 24px;
+}
+
+article.text > div.rHeader {
+  width: 100%;
+}
+
+article.text > div.rHeader > h2 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  color: var(--text-color1);
+  margin: 0 auto;
+}
+
+.empty > img {
+  width: 48px;
+  height: 48px;
+  margin: 16px;
+}
+
+article.text > img {
+  width: 127.02px;
+  height: 57px;
+  position: absolute;
+  left: - calc(127px / 2);
+  bottom: 0;
+}
+
+div.know {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  gap: 40px;
+  background-color: var(--dark-white);
+  border: 1px solid #c1c7d0;
+  border-radius: 8px;
+}
+
+ul.maintain {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  padding-left: 0;
+  gap: 24px;
+}
+
+ul.maintain > li {
+  width: inherit;
+}
+
+div.know > div.contain {
+  margin-top: 16px;
+  width: 100%;
+  height: 128px;
+}
+
+div.know > div.contain > div.empty {
+  margin-top: 24px;
+  margin-bottom: 24px;
+  width: 80px;
+  height: 80px;
+  margin-left: calc((100% - 80px) / 2);
+  margin-right: calc((100% - 80px) / 2);
+  border-radius: 50%;
+  background-color: #fff;
+  box-shadow: 0 16px 24px rgba(37, 47, 137, 0.08);
+}
+
+h3 {
+  margin: 0 auto;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  color: var(--h3title-color);
+}
+
+div.know > div.describe {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  gap: 24px;
+  margin-bottom: 72px;
+}
+
+div.know > div.describe > h3 {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  text-align: center;
+  color: var(--h3title-color);
+}
+
+div.know > div.describe > ul {
+  margin: 0 auto;
+}
+
+div.know > div.describe > ul > li {
+  background-color: #fff;
+  height: 40px;
+}
+
+div.know > div.describe > ul > li > span {
+  color: var(--dark-green);
+}
+
+@media only screen and (min-width: 1000px) {
   #main {
     width: 100vw;
     height: 100vh;
@@ -163,6 +453,10 @@ button {
 
   nav.navigation {
     display: block;
+  }
+
+  ul.maintain > li {
+    width: 369px;
   }
 
   nav.navigation > ul > li {
@@ -202,10 +496,63 @@ button {
   }
 
   span {
-    color: var(--text-green);
+    color: var(--dark-green);
   }
 
   section.icon > a {
     margin-left: 2%;
+  }
+
+  section.recentWork {
+    width: 90%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 32px;
+    column-gap: 24px;
+    margin: auto;
+  }
+
+  .title {
+    grid-column: 1 / 4;
+  }
+
+  section.recentWork > div.title > h1 > br,
+  .bar {
+    display: none;
+  }
+
+  section.recentWork > article {
+    width: 369px;
+    height: 558px;
+  }
+
+  section.aboutMe > article.text {
+    width: 920px;
+    height: 240px;
+  }
+
+  section.aboutMe > article.text > p {
+    color: #42526e;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    text-align: center;
+  }
+
+  article.text > button.buttonCol {
+    width: 159px;
+    height: 48px;
+  }
+
+  ul.maintain {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 24px;
+  }
+
+  ul.maintain > li > div.know {
+    width: 369px;
+    height: 352px;
   }
 }
