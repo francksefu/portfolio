@@ -344,7 +344,7 @@ article.text > img {
   width: 127.02px;
   height: 57px;
   position: absolute;
-  left: - calc(127px / 2px);
+  left: - calc(127px / 2);
   bottom: 0;
 }
 
