@@ -163,7 +163,7 @@ button:focus {
 }
 
 button:enabled {
-  background: #36B37F;
+  background: #36b37f;
   border-radius: 4px;
 }
 
@@ -225,7 +225,7 @@ section.recentWork > article > div.detail {
   align-items: center;
   padding: 16px;
   gap: 4%;
-  background: #ffffff;
+  background: #fff;
   border-radius: 8px;
 }
 
@@ -249,6 +249,15 @@ ul.language > li {
   border-radius: 4px;
 }
 
+.buttonCol > span {
+  padding: 12px;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  color: white;
+  letter-spacing: 0.03em;
+}
+
 ul.language > li > span {
   font-weight: 600;
   font-size: 12px;
@@ -266,15 +275,6 @@ ul.language > li > span {
   border-radius: 8px;
   margin-left: 30%;
   margin-right: 30%;
-}
-
-.buttonCol > span {
-  padding: 12px;
-  font-weight: 500;
-  font-size: 17px;
-  line-height: 24px;
-  color: white;
-  letter-spacing: 0.03em;
 }
 
 /*
@@ -331,7 +331,7 @@ ul.maintain {
   flex-direction: column;
   width: 100%;
   height: auto;
-  padding-left: 0px;
+  padding-left: 0;
   gap: 24px;
 }
 
@@ -354,7 +354,7 @@ div.know > div.contain > div.empty {
   margin-right: calc((100% - 80px) / 2);
   border-radius: 50%;
   background-color: #fff;
-  box-shadow: 0px 16px 24px rgba(37, 47, 137, 0.08);
+  box-shadow: 0 16px 24px rgba(37, 47, 137, 0.08);
 }
 
 .empty > img {
@@ -419,6 +419,10 @@ div.know > div.describe > ul > li > span {
     display: block;
   }
 
+  ul.maintain > li {
+    width: 369px;
+  }
+
   nav.navigation > ul > li {
     margin: 10px;
   }
@@ -479,7 +483,7 @@ div.know > div.describe > ul > li > span {
   section.recentWork > header.title > h1 > br,
   .bar {
     display: none;
-  } 
+  }
 
   section.recentWork > article {
     width: 369px;
@@ -496,10 +500,6 @@ div.know > div.describe > ul > li > span {
     flex-direction: row;
     justify-content: center;
     gap: 24px;
-  }
-
-  ul.maintain > li {
-    width: 369px;
   }
 
   ul.maintain > li > div.know {
