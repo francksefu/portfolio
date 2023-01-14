@@ -176,7 +176,6 @@ Second part of project
 */
 
 section.recentWork {
-  margin-top: 10%;
   width: 100vw;
   height: auto;
   padding: 64px 24px;
@@ -317,7 +316,6 @@ section.aboutMe > article.text {
   align-items: center;
   padding: 0;
   gap: 24px;
-  
 }
 
 article.text > div.rHeader {
@@ -336,11 +334,17 @@ article.text > button {
   margin-bottom: 0;
 }
 
+.empty > img {
+  width: 48px;
+  height: 48px;
+  margin: 16px;
+}
+
 article.text > img {
   width: 127.02px;
   height: 57px;
   position: absolute;
-  left: calc(-127.02px / 2px);
+  left: - calc(127px / 2px);
   bottom: 0;
 }
 
@@ -385,12 +389,6 @@ div.know > div.contain > div.empty {
   border-radius: 50%;
   background-color: #fff;
   box-shadow: 0 16px 24px rgba(37, 47, 137, 0.08);
-}
-
-.empty > img {
-  width: 48px;
-  height: 48px;
-  margin: 16px;
 }
 
 h3 {
