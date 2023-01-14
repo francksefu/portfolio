@@ -44,7 +44,8 @@
 
 <!-- Features -->
 ### Key Features <a name="key-features">Portfolio</a>
-> In this project, I just introduced myself and I give my contacts
+> In this project, I just introduced myself and I give my contacts.
+After that you can see my works, and my knowledge.
 
 <!-- LIVE DEMO -->
 ## 🚀 Live Demo <a name="live-demo"></a>
@@ -80,7 +81,7 @@ To run the project, open the html folder in your navigator
 <!-- FUTURE FEATURES -->
 ## 🔭 Future Features <a name="future-features">Make it dynamic</a>
 > 
-- In the soon future, I will every project I will make, and describe it, and add the link for it.
+- In the soon future, I will put every project I will make, and describe it, and add the link for it for everyone wanna check it.
 -certainly I will make this page dynamic in using javaSript
 - And every day I will make it pretty
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
