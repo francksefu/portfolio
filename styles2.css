@@ -1,6 +1,9 @@
 :root {
   --text-color1: #172b4d;
-  --text-green: #36b37f;
+  --dark-green: #36b37f;
+  --dark-white: #ebf0ee;
+  --letter-colorRC: #3a4a42;
+  --h3title-color: #344563;
 }
 
 @font-face {
@@ -19,9 +22,9 @@
   font-family: Inter, sans-serif;
   font-style: normal;
 }
-
-span {
-  color: var(--text-green);
+main {
+  display: grid;
+  grid-template-columns: 1fr;
 }
 
 /* As we see in fring template, when we have a mobile device, the nav tag
@@ -143,12 +146,261 @@ section.action {
   margin: 0 auto;
 }
 
-button {
-  border: none;
+section.headline > button {
   margin-top: 58px;
 }
 
-@media only screen and (min-width: 768px) {
+button {
+  border: none;
+}
+
+/*
+Second part of project
+*/
+section.recentWork {
+  margin-top: 10%;
+  width: 100vw;
+  height: auto;
+  padding: 64px 24px;
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  gap: 58px;
+}
+
+div.detail > header > h2{
+  margin: 0 auto;
+}
+
+h2 {
+  text-align: center;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  color: var(--letter-colorRC);
+  padding: 0 auto;
+}
+
+.bar {
+  width: 48px;
+  height: 4px;
+  background-color: var(--dark-green);
+  border-radius: 24px;
+  margin: 0 auto;
+}
+
+section.recentWork > article {
+  width: 90vw;
+  height: 90vh;
+  border-radius: 8px;
+  background-color: var(--dark-white);
+  border: 1px solid #d0d9d4;
+}
+
+section.recentWork > article > div {
+  width: 100%;
+  height: 50%;
+}
+
+section.recentWork > article > div.detail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px;
+  gap: 4%;
+  background: #FFFFFF;
+  border-radius: 8px;
+}
+
+/*
+section.recentWork > article > div.detail > ul
+*/
+ul.language {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0px;
+  gap: 8px;
+  width: 90%;
+}
+
+ul.language > li {
+  height: 32px;
+  padding: 8px 12px;
+  background-color: var(--dark-white);
+  border-radius: 4px;
+}
+
+ul.language > li > span {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  color: var(--letter-colorRC);
+}
+
+.buttonCol {
+  background-color: var(--dark-green);
+  width: 40%;
+  height: 48px;
+  min-width: 122px;
+  max-width: 200px;
+  border-radius: 8px;
+  margin-left: 30%;
+  margin-right: 30%;
+}
+.buttonCol > span {
+  padding: 12px;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  color: white;
+  letter-spacing: 0.03em;
+}
+
+/*
+button state
+*/
+
+button:hover {
+  background: #36b37f;
+  box-shadow: 0px 8px 16px rgba(54, 179, 127, 0.24);
+  border-radius: 4px;
+}
+
+button:focus {
+  background: #008552;
+  border-radius: 4px;
+}
+
+button:enabled {
+  background: #36B37F;
+  border-radius: 4px;
+}
+
+section.aboutMe {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 64px 24px;
+  gap: 58px;
+}
+
+section.aboutMe > article.text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  gap: 24px;
+}
+
+article.text > header {
+  width: 100%;
+}
+
+article.text > header > h2 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  color:  var(--text-color1);
+  margin: 0px auto;
+}
+
+article.text > button {
+  margin-bottom: 0px;
+}
+
+div.know {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  gap: 40px;
+  background-color: var(--dark-white);
+  border: 1px solid #C1C7D0;
+  border-radius: 8px;
+}
+
+ul.maintain {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  padding-left: 0px;
+  gap: 24px;
+}
+
+ul.maintain > li {
+  width: inherit;
+}
+
+div.know > div.contain {
+  margin-top: 16px;
+  width: 100%;
+  height: 128px;
+}
+
+div.know > div.contain > div.empty {
+  margin-top: 24px;
+  margin-bottom: 24px;
+  width: 80px;
+  height: 80px;
+  margin-left: calc((100% - 80px) / 2);
+  margin-right: calc((100% - 80px) / 2);
+  border-radius: 50%;
+  background-color: #fff;
+  box-shadow: 0px 16px 24px rgba(37, 47, 137, 0.08);
+}
+
+.empty > img {
+  width: 48px;
+  height: 48px;
+  margin: 16px;
+}
+
+h3 {
+  margin: 0 auto;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  color: var(--h3title-color);
+}
+
+div.know > div.describe {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  gap: 24px;
+  margin-bottom: 72px;
+}
+
+div.know > div.describe > h3 {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  text-align: center;
+  color: var(--h3title-color);
+}
+
+div.know > div.describe > ul {
+  margin: 0 auto;
+}
+
+div.know > div.describe > ul > li {
+  background-color: #fff;
+  height: 40px;
+}
+
+div.know > div.describe > ul > li > span {
+  color: var(--dark-green);
+}
+
+@media only screen and (min-width: 1000px) {
   #main {
     width: 100vw;
     height: 100vh;
@@ -202,10 +454,54 @@ button {
   }
 
   span {
-    color: var(--text-green);
+    color: var(--dark-green);
   }
 
   section.icon > a {
     margin-left: 2%;
+  }
+  
+  section.recentWork {
+    width: 90%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 32px;
+    column-gap: 24px;
+    margin: auto;
+  }
+
+  .title {
+    grid-column: 1 / 4;
+  }
+
+  section.recentWork > header.title > h1 > br,
+  .bar {
+    display: none;
+  } 
+
+  section.recentWork > article {
+    width: 369px;
+    height: 474px;
+  }
+
+  section.aboutMe > article.text {
+    width: 920px;
+    height: 240px;
+  }
+
+  ul.maintain {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 24px;
+  }
+
+  ul.maintain > li {
+    width: 369px;
+  }
+
+  ul.maintain > li > div.know {
+    width: 369px;
+    height: 352px;
   }
 }
