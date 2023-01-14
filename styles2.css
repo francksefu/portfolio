@@ -245,9 +245,14 @@ section.recentWork > article > div.detail {
   border-radius: 8px;
 }
 
+article.text > button {
+  margin-bottom: 0;
+}
+
 section.recentWork > article > div.detail > button {
   margin-bottom: 8px;
 }
+
 /*
 section.recentWork > article > div.detail > ul
 */
@@ -336,10 +341,6 @@ article.text > div.rHeader > h2 {
   line-height: 52px;
   color: var(--text-color1);
   margin: 0 auto;
-}
-
-article.text > button {
-  margin-bottom: 0;
 }
 
 .empty > img {
