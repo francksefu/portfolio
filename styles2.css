@@ -274,8 +274,9 @@ ul.language > li {
   border-radius: 4px;
 }
 
-.buttonCol > span {
-  padding: 12px;
+button.buttonCol > span {
+  width: 98px;
+  height: 24px;
   font-weight: 500;
   font-size: 17px;
   line-height: 24px;
@@ -293,11 +294,9 @@ ul.language > li > span {
 
 .buttonCol {
   background-color: var(--dark-green);
-  width: 159px;
+  width: 122px;
   height: 48px;
   border-radius: 8px;
-  margin-left: 30%;
-  margin-right: 30%;
 }
 
 /*
@@ -314,7 +313,7 @@ section.aboutMe {
 }
 
 article.text > button.buttonCol {
-  width: 181px;
+  width: 159px;
   margin-top: 24px;
 }
 
@@ -541,7 +540,7 @@ div.know > div.describe > ul > li > span {
   }
 
   article.text > button.buttonCol {
-    width: 181px;
+    width: 159px;
     height: 48px;
   }
 
