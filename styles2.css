@@ -556,3 +556,39 @@ div.know > div.describe > ul > li > span {
     height: 352px;
   }
 }
+
+.contact-form p {
+  font-weight: 700;
+  font-size: 40px;
+  color: #172b4d;
+  line-height: 52px;
+  text-align: center;
+  padding: 0;
+  margin: 60px 24px 58px 24px;
+}
+
+.contact-form form {
+  margin-left: 24px;
+  margin-right: 24px;
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  gap: 24px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  appearance: none;
+  background-color: #fff;
+  border: 1px solid #d0d9d4;
+  border-radius: 4px;
+  font-size: 15px;
+  color: #6b778c;
+  padding: 15px 16px;
+  box-sizing: border-box;
+  height: 48px;
+}
+
+.contact-form textarea {
+  height: 114px;
+}
