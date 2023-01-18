@@ -131,8 +131,13 @@ h1 {
   line-height: 52px;
 }
 
-section.icon {
+#main section.icon {
   margin: 40px auto;
+}
+
+.social-icons > ul {
+  margin: 0 auto 0 auto;
+  padding-left: 0;
 }
 
 section.icon > ul {
@@ -165,6 +170,14 @@ button:focus {
 button:enabled {
   background: #36b37f;
   border-radius: 4px;
+}
+
+.contact-form button {
+  width: 129px;
+  height: 48px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 8px;
 }
 
 section.headline > button {
@@ -375,6 +388,7 @@ ul.maintain {
   height: auto;
   padding-left: 0;
   gap: 24px;
+  margin-bottom: 0;
 }
 
 ul.maintain > li {
@@ -555,4 +569,91 @@ div.know > div.describe > ul > li > span {
     width: 369px;
     height: 352px;
   }
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  margin-bottom: 17px;
+  background-image: url(Frame.svg);
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: 92.14px 131.71px;
+}
+
+footer > p {
+  color: #42526e;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+}
+
+.contact-form > p {
+  font-weight: 700;
+  font-size: 40px;
+  color: #172b4d;
+  line-height: 52px;
+  text-align: center;
+  padding: 0;
+  margin: -4px 24px 58px 24px;
+  height: auto;
+}
+
+.contact-form form {
+  margin-left: 24px;
+  margin-right: 24px;
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  gap: 24px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  appearance: none;
+  background-color: #fff;
+  border: 1px solid #d0d9d4;
+  border-radius: 4px;
+  font-size: 15px;
+  color: #6b778c;
+  padding: 15px 16px;
+  box-sizing: border-box;
+  height: 48px;
+}
+
+.contact-form textarea {
+  height: 114px;
+}
+
+.contact-form textarea :hover {
+  border: 1px solid #60c095;
+}
+
+.social-icons {
+  margin-top: 44px;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  gap: 113px;
+}
+
+footer > div.contentline {
+  width: 100%;
+  height: 34px;
+}
+
+.line {
+  width: 134px;
+  height: 5px;
+  background-color: #0d151e;
+  border-radius: 10px;
+  margin: 21px auto 8px auto;
+  padding: 0;
 }
