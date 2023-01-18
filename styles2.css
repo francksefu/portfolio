@@ -245,13 +245,11 @@ section.recentWork > article > div.detail {
   border-radius: 8px;
 }
 
-article.text > button,
-.contact-form button {
+article.text > button {
   margin-bottom: 0;
 }
 
-section.recentWork > article > div.detail > button ,
-.contact-form button {
+section.recentWork > article > div.detail > button {
   margin-bottom: 8px;
 }
 
@@ -571,7 +569,7 @@ div.know > div.describe > ul > li > span {
   background-size: 92.14px 131.71px;
 }
 
-.contact-form p {
+.contact-form > p {
   font-weight: 700;
   font-size: 40px;
   color: #172b4d;
@@ -612,11 +610,12 @@ div.know > div.describe > ul > li > span {
   border: 1px solid #60c095;
 }
 
-.contact-form button {
+.contact-form  button {
   width: 129px;
   height: 48px;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 8px;
 }
 
 .social-icons {
