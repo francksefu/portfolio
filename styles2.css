@@ -167,6 +167,14 @@ button:enabled {
   border-radius: 4px;
 }
 
+.contact-form  button {
+  width: 129px;
+  height: 48px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 8px;
+}
+
 section.headline > button {
   margin-top: 58px;
 }
@@ -426,6 +434,11 @@ div.know > div.describe > h3 {
   color: var(--h3title-color);
 }
 
+.social-icons > ul {
+  margin: 0 auto 0 auto;
+  padding-left: 0;
+}
+
 div.know > div.describe > ul {
   margin: 0 auto;
 }
@@ -569,6 +582,13 @@ div.know > div.describe > ul > li > span {
   background-size: 92.14px 131.71px;
 }
 
+footer > p {
+  color: #42526e;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+}
+
 .contact-form > p {
   font-weight: 700;
   font-size: 40px;
@@ -610,14 +630,6 @@ div.know > div.describe > ul > li > span {
   border: 1px solid #60c095;
 }
 
-.contact-form  button {
-  width: 129px;
-  height: 48px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 8px;
-}
-
 .social-icons {
   margin-top: 44px;
   margin-bottom: 0;
@@ -625,23 +637,11 @@ div.know > div.describe > ul > li > span {
   margin-right: auto;
 }
 
-.social-icons > ul {
-  margin: 0 auto 0 auto;
-  padding-left: 0;
-}
-
 footer {
   display: flex;
   flex-direction: column;
   align-content: space-between;
   gap: 113px;
-}
-
-footer > p {
-  color: #42526E;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 32px;
 }
 
 footer > div.contentline {
