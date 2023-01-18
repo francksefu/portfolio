@@ -264,49 +264,55 @@
 
         </section>
         <!--Start contact form -->
+
         <section class="contact-form">
             <p>
                 I'm always interested in hearing about new projects,
                 so if you'd like to chat please get in touch.
             </p>
-            <form>
-                <input type="text" id="name" name="user_name" placeholder="Full name" />
-                <input type="email" name="user_email" id="email" placeholder="Email address">
-                <textarea name="comment" id="comment" placeholder='Enter text here'></textarea>
+            <form action="https://formspree.io/f/moqzvwoo" method="POST">
+                <input type="text" id="name" name="user_name" placeholder="Full name" required maxlength="30"/>
+                <input type="email" name="user_email" id="email" placeholder="Email address" required>
+                <textarea name="comment" id="comment" placeholder='Enter text here' required maxlength="500"></textarea>
                 <button type="submit" class="buttonCol"><span>Get in Touch</span></button>
             </form>
+
+            <section class='social-icons icon'>
+                <ul>
+                    <li>
+                        <a href="https://medium.com/@francksefu1998">
+                            <i class="fab fa-medium"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/franck_sefu">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/franck-sefu-884705254/">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/francksefu">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </li>
+                </ul>
+            </section>
         </section>
 
-        <section class='social-icons icon'>
-            <ul>
-                <li>
-                    <a href="https://medium.com/@francksefu1998">
-                        <i class="fab fa-medium"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://twitter.com/franck_sefu">
-                        <i class="fab fa-twitter"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.linkedin.com/in/franck-sefu-884705254/">
-                        <i class="fab fa-linkedin-in"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://github.com/francksefu">
-                        <i class="fab fa-github"></i>
-                    </a>
-                </li>
-            </ul>
-        </section>
+        
 
     </main>
 
 
     <footer>
-        <p>jaimevillegas296@gmail.com</p>
+        <p>francksefu1998@gmail.com</p>
+        <div class="contentline">
+            <div class="line"></div>
+        </div>
     </footer>
 </body>
 

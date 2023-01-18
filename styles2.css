@@ -131,7 +131,7 @@ h1 {
   line-height: 52px;
 }
 
-section.icon {
+#main section.icon {
   margin: 40px auto;
 }
 
@@ -377,6 +377,7 @@ ul.maintain {
   height: auto;
   padding-left: 0;
   gap: 24px;
+  margin-bottom: 0;
 }
 
 ul.maintain > li {
@@ -559,6 +560,17 @@ div.know > div.describe > ul > li > span {
   }
 }
 
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  margin-bottom: 17px;
+  background-image: url(Frame.svg);
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: 92.14px 131.71px;
+}
+
 .contact-form p {
   font-weight: 700;
   font-size: 40px;
@@ -566,7 +578,7 @@ div.know > div.describe > ul > li > span {
   line-height: 52px;
   text-align: center;
   padding: 0;
-  margin: 60px 24px 58px 24px;
+  margin: -4px 24px 58px 24px;
   height: auto;
 }
 
@@ -596,6 +608,10 @@ div.know > div.describe > ul > li > span {
   height: 114px;
 }
 
+.contact-form textarea :hover {
+  border: 1px solid #60c095;
+}
+
 .contact-form button {
   width: 129px;
   height: 48px;
@@ -603,7 +619,42 @@ div.know > div.describe > ul > li > span {
   margin-right: auto;
 }
 
-.contact-form .social-icons {
-  margin-top: 46px;
+.social-icons {
+  margin-top: 44px;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
 }
 
+.social-icons > ul {
+  margin: 0 auto 0 auto;
+  padding-left: 0;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  gap: 113px;
+}
+
+footer > p {
+  color: #42526E;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+}
+
+footer > div.contentline {
+  width: 100%;
+  height: 34px;
+}
+
+.line {
+  width: 134px;
+  height: 5px;
+  background-color: #0d151e;
+  border-radius: 10px;
+  margin: 21px auto 8px auto;
+  padding: 0;
+}
