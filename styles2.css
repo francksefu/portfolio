@@ -139,6 +139,10 @@ h1 {
   line-height: 52px;
 }
 
+span.transit {
+  color: var(--dark-green);
+}
+
 #main section.icon {
   margin: 40px auto;
 }
@@ -154,6 +158,17 @@ section.icon > ul {
   align-items: center;
   width: 200px;
   height: 40px;
+}
+
+section.icon > ul > li {
+  transform: scale(1);
+  transition-property: transform;
+  transition-duration: 0.5s;
+  transition-timing-function: linear;
+}
+
+section.icon > ul > li:hover {
+  transform: scale(2);
 }
 
 section.action {
