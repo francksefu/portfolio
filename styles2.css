@@ -560,7 +560,9 @@ footer > div.contentline {
 
 @media only screen and (min-width: 768px) {
   main {
+    box-sizing: border-box;
     width: 100%;
+    overflow: hidden;
     background-image: url("leftcf.svg"), url("middlecf.svg"), url("rightcf.svg");
     background-repeat: no-repeat;
     background-position: bottom left, bottom 84.15px left 274px, bottom right;
@@ -654,8 +656,8 @@ footer > div.contentline {
     padding: 84px 8px;
     display: grid;
     grid-template-columns: 31% 31% 31%;
+    width: 81.3%;
     max-width: 1187px;
-    border: 1px solid black;
     align-items: center;
     margin-left: auto;
     margin-right: auto;
@@ -785,8 +787,8 @@ footer > div.contentline {
     align-items: flex-start;
     padding: 80px 0;
     gap: 24px;
-    width: auto;
-    max-width: 1171px;
+    width: 81.3%;
+    /*max-width: 1171px;*/
     margin: 0 auto 145px auto;
     background-image: none;
   }
