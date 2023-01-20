@@ -547,6 +547,15 @@ footer > div.contentline {
   display: none;
 }
 
+a > img {
+  height: 20px;
+  width: 14.1px;
+}
+
+.icon > ul {
+  padding-left: 0;
+}
+
 /* Desktop version */
 
 @media only screen and (min-width: 768px) {
@@ -616,7 +625,7 @@ footer > div.contentline {
     line-height: 52px;
     height: 256px;
     margin: 0;
-    width: 436px;
+    width: auto;
     padding-top: 20px;
   }
 
@@ -641,11 +650,12 @@ footer > div.contentline {
   /* Recent work section */
 
   section.recentWork {
-    width: auto;
     height: auto;
     padding: 84px 8px;
     display: grid;
-    grid-template-columns: 369px 369px 369px;
+    grid-template-columns: 31% 31% 31%;
+    max-width: 1187px;
+    border: 1px solid black;
     align-items: center;
     margin-left: auto;
     margin-right: auto;
@@ -771,11 +781,12 @@ footer > div.contentline {
 
   .contact-form {
     display: grid;
-    grid-template-columns: 436px 1fr;
+    grid-template-columns: 37.2% 58.4%;
     align-items: flex-start;
     padding: 80px 0;
     gap: 24px;
-    width: 1171px;
+    width: auto;
+    max-width: 1171px;
     margin: 0 auto 145px auto;
     background-image: none;
   }
@@ -802,6 +813,7 @@ footer > div.contentline {
   }
 
   hr {
+    width: 100%;
     height: 1px;
     color: #dfe1e6;
   }
