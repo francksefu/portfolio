@@ -144,6 +144,10 @@ h1 > span {
   padding-left: 0;
 }
 
+.icon > ul {
+  padding-left: 0;
+}
+
 section.icon > ul {
   display: flex;
   flex-direction: row;
@@ -359,6 +363,11 @@ article.text > div.rHeader > h2 {
   margin: 0 auto;
 }
 
+a > img {
+  height: 20px;
+  width: 14.1px;
+}
+
 .empty > img {
   width: 48px;
   height: 48px;
@@ -545,15 +554,6 @@ footer > div.contentline {
 
 .desktop {
   display: none;
-}
-
-a > img {
-  height: 20px;
-  width: 14.1px;
-}
-
-.icon > ul {
-  padding-left: 0;
 }
 
 /* Desktop version */
