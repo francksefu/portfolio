@@ -615,7 +615,6 @@ footer > div.contentline {
     font-size: 30px;
     line-height: 52px;
     height: 256px;
-    padding-top: auto;
     margin: 0;
     width: 436px;
     padding-top: 20px;
@@ -806,5 +805,4 @@ footer > div.contentline {
     height: 1px;
     color: #dfe1e6;
   }
-
 }
