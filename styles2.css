@@ -19,7 +19,7 @@
 
 * {
   box-sizing: border-box;
-  font-family: 'Inter';
+  font-family: Inter, sans-serif;
   font-style: normal;
 }
 
@@ -606,9 +606,19 @@ footer > div.contentline {
   h1 {
     margin: 0 auto;
   }
-  
+
   section.headline > header {
     margin-bottom: 24px;
+  }
+
+  .contact-form > p {
+    font-size: 30px;
+    line-height: 52px;
+    height: 256px;
+    padding-top: auto;
+    margin: 0;
+    width: 436px;
+    padding-top: 20px;
   }
 
   .content > p,
@@ -683,17 +693,7 @@ footer > div.contentline {
   section.aboutMe {
     height: auto;
     padding: 80px 0;
-    gap: 48px;
-  }
-
-  .contact-form > p {
-    font-size: 30px;
-    line-height: 52px;
-    height: 256px;
-    padding-top: auto;
-    margin: 0;
-    width: 436px;
-    padding-top: 20px;
+    column-gap: 48px;
   }
 
   section.aboutMe > article.text {
@@ -806,4 +806,5 @@ footer > div.contentline {
     height: 1px;
     color: #dfe1e6;
   }
+
 }
