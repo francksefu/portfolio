@@ -19,7 +19,7 @@
 
 * {
   box-sizing: border-box;
-  font-family: Inter, sans-serif;
+  font-family: Inter;
   font-style: normal;
 }
 
@@ -129,6 +129,10 @@ h1 {
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
+}
+
+h1 > span {
+  color: var(--dark-green);
 }
 
 #main section.icon {
@@ -452,125 +456,6 @@ div.know > div.describe > ul > li > span {
   color: var(--dark-green);
 }
 
-@media only screen and (min-width: 1000px) {
-  #main {
-    width: 100vw;
-    height: 100vh;
-    background-image: url(Header-llustration-desktop.svg);
-    display: flex;
-    flex-direction: column;
-  }
-
-  #smallScreen {
-    display: none;
-  }
-
-  nav.navigation {
-    display: block;
-  }
-
-  ul.maintain > li {
-    width: 369px;
-  }
-
-  nav.navigation > ul > li {
-    margin: 10px;
-  }
-
-  a {
-    text-decoration: none;
-    color: var(--text-color1);
-  }
-
-  section.headline {
-    height: 80%;
-    width: 80%;
-    margin-left: 10%;
-    margin-top: 5%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-  }
-
-  p {
-    width: 80%;
-    text-align: center;
-    margin-left: 10%;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 32px;
-  }
-
-  h1 {
-    text-align: center;
-    color: var(--text-color1);
-    font-weight: 800;
-    font-size: 48px;
-    line-height: 60px;
-  }
-
-  span {
-    color: var(--dark-green);
-  }
-
-  section.icon > a {
-    margin-left: 2%;
-  }
-
-  section.recentWork {
-    width: 90%;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    row-gap: 32px;
-    column-gap: 24px;
-    margin: auto;
-  }
-
-  .title {
-    grid-column: 1 / 4;
-  }
-
-  section.recentWork > div.title > h1 > br,
-  .bar {
-    display: none;
-  }
-
-  section.recentWork > article {
-    width: 369px;
-    height: 558px;
-  }
-
-  section.aboutMe > article.text {
-    width: 920px;
-    height: 240px;
-  }
-
-  section.aboutMe > article.text > p {
-    color: #42526e;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 32px;
-    text-align: center;
-  }
-
-  article.text > button.buttonCol {
-    width: 159px;
-    height: 48px;
-  }
-
-  ul.maintain {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 24px;
-  }
-
-  ul.maintain > li > div.know {
-    width: 369px;
-    height: 352px;
-  }
-}
-
 .contact-form {
   display: flex;
   flex-direction: column;
@@ -656,4 +541,276 @@ footer > div.contentline {
   border-radius: 10px;
   margin: 21px auto 8px auto;
   padding: 0;
+}
+
+.desktop {
+  display: none;
+}
+
+/*Desktop version */
+
+@media only screen and (min-width: 768px) {
+
+  main {
+    width: 100%;
+  }
+
+  section#main {
+    background-size: cover;
+    background-position: top;
+    width: 100%;
+    height: auto;
+  }
+
+  header#smallScreen {
+    display: none;
+  }
+
+  nav.navigation {
+    display: block;
+  }
+
+  nav.navigation {
+    width: 100%;
+    height: 72px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  nav.navigation > ul {
+    width: 255px;
+    height: 40px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: space-between;
+    gap: 8px;
+    padding: 0;
+  }
+
+  nav.navigation > ul > li {
+    padding: 10px 12px;
+  }
+
+  section.headline {
+    height: auto;
+    width: 64%;
+    max-width: 920px;
+    margin: 0 auto auto auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 160px 0;
+  }
+
+  h1 {
+    margin: 0 auto;
+  }
+  
+  section.headline > header {
+    margin-bottom: 24px;
+  }
+
+  .content > p,
+  article.text > p {
+    height: auto;
+  }
+
+  #main section.icon {
+    margin: 24px auto 74px auto;
+  }
+
+  section.headline > button {
+    margin-bottom: 184px;
+    margin-top: 0;
+  }
+
+  /*Recent work section */
+
+  section.recentWork {
+    width: auto;
+    height: auto;
+    padding: 84px 8px;
+    display: grid;
+    grid-template-columns: 369px 369px 369px;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-between;
+    row-gap: 24px;
+    column-gap: 32px;
+    margin-bottom: 28px;
+  }
+
+  div.title {
+    grid-column: 1/span 3;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -4px;
+  }
+
+  section.recentWork > div.rHeader.title > div {
+    display: none;
+  }
+
+  h1.title > br {
+    display: none;
+  }
+  section.recentWork > article {
+    max-width: 369px;
+  }
+  
+  ul.language {
+    width: auto;
+  }
+  
+  .vide {
+    height: 252px;
+  }
+
+  section.aboutMe {
+    height: auto;
+    padding: 80px 0;
+    gap: 48px;
+  }
+
+  section.aboutMe > article.text {
+    width: inherit;
+    background-image: url("illustration\ about\ me\ desktop\ \(2\).svg"), url(illustration-desktopText.svg);
+    background-position: top right, bottom 16px left;
+    background-size: contain, auto;
+    flex-direction: column;
+    align-items: center;
+    align-content: space-around;
+    gap: 24px;
+  }
+
+  section.aboutMe > article > div,
+  section.aboutMe > article > p {
+    max-width: 920px;
+    width: 64%;
+  }
+
+  section.aboutMe > article > p {
+    height: auto;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+  }
+
+  section.aboutMe > article.text > button {
+    margin-top: 0;
+  }
+
+  ul.maintain {
+    margin-top: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 4px 8px;
+  gap: 24px;
+  width: 1171px;
+  height: auto;
+  }
+
+  div.know {
+    width: 100%;
+    height: 352px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    gap: 0px;
+    padding: 0 16px;
+    padding-bottom: 24px;
+    
+  }
+
+  div.know > div.contain {
+    margin-top: 0;
+    margin-bottom: 64px;
+    padding-bottom: 0;
+  }
+
+  div.know > div.contain > div.empty {
+    margin-top: 40px;
+    margin-bottom: 0;
+  }
+
+  div.know > div.describe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 24px;
+    margin-bottom: 0;
+  }
+
+  /*Hide footer mobile */
+
+  .mobile {
+    display: none;
+  }
+
+  .desktop {
+    display: block;
+  }
+
+  .contact-form {
+    display: grid;
+    grid-template-columns: 436px 1fr;
+    align-items: flex-start;
+    padding: 80px 0;
+    gap: 24px;
+    width: 1171px;
+    margin: 0 auto 145px auto;
+    background-image: none;
+  }
+
+  .deskcol {
+    grid-row: 1/span 3;
+  }
+
+  .contact-form > p {
+    font-size: 30px;
+    line-height: 52px;
+    height: 256px;
+    padding-top: auto;
+    margin: 0;
+    width: 436px;
+    padding-top: 20px;
+  }
+
+  .contact-form > form {
+    margin-left: 0;
+  }
+
+  .contact-form > form > input {
+    height: 48px;
+  }
+
+  .contact-form > form > textarea {
+    height: 114px;
+  }
+
+  .contact-form button {
+    margin-left: 0;
+  }
+
+  .icon.desktop > ul {
+    margin: 15px auto;
+    width: 100%;
+  }
+
+  hr {
+    height: 1px;
+    color: #dfe1e6;;
+  }
+
+  main {
+    background-image: url("leftcf.svg"), url("middlecf.svg"), url("rightcf.svg");
+    background-repeat: no-repeat;
+    background-position: bottom left, bottom 84.15px left 274px, bottom right;
+    background-size: 236px 261px, 130px 105px, 316px 450px;
+  }
 }
