@@ -26,6 +26,7 @@
 main {
   display: grid;
   grid-template-columns: 1fr;
+  overflow: hidden;
 }
 
 /* As we see in fring template, when we have a mobile device, the nav tag
