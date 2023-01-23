@@ -26,7 +26,6 @@
 main {
   display: grid;
   grid-template-columns: 1fr;
-  overflow: hidden;
 }
 
 /* As we see in fring template, when we have a mobile device, the nav tag
@@ -157,6 +156,17 @@ section.icon > ul {
   height: 40px;
 }
 
+ul.language > li {
+  height: 32px;
+  padding: 8px 12px;
+  background-color: var(--dark-white);
+  border-radius: 4px;
+}
+
+ul.maintain > li {
+  width: inherit;
+}
+
 section.icon > ul > li {
   transform: scale(1);
   transition-property: transform;
@@ -170,14 +180,6 @@ section.icon > ul > li:hover {
 
 section.action {
   margin: 0 auto;
-}
-
-section.headline > button {
-  background-color: transparent;
-}
-
-section.headline > button:hover {
-  background-color: #36b37f;
 }
 
 button {
@@ -210,6 +212,7 @@ button:enabled {
 }
 
 section.headline > button {
+  background-color: transparent;
   margin-top: 58px;
 }
 
@@ -291,6 +294,10 @@ article.text > button {
   margin-bottom: 0;
 }
 
+section.headline > button:hover {
+  background-color: #36b37f;
+}
+
 section.recentWork > article > div.detail > button {
   margin-bottom: 8px;
 }
@@ -307,13 +314,6 @@ ul.language {
   padding: 0;
   gap: 8px;
   width: 90%;
-}
-
-ul.language > li {
-  height: 32px;
-  padding: 8px 12px;
-  background-color: var(--dark-white);
-  border-radius: 4px;
 }
 
 button.buttonCol > span {
@@ -423,10 +423,6 @@ ul.maintain {
   padding-left: 0;
   gap: 24px;
   margin-bottom: 0;
-}
-
-ul.maintain > li {
-  width: inherit;
 }
 
 div.know > div.contain {
