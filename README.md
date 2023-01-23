@@ -50,7 +50,7 @@ After that you can see my works, and my knowledge.
 <!-- LIVE DEMO -->
 ## 🚀 Live Demo <a name="live-demo"></a>
 > 
-- [Live Demo Link](Coming soon...)
+- [Live Demo Link](https://francksefu.github.io)
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
