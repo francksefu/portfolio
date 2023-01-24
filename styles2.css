@@ -4,6 +4,7 @@
   --dark-white: #ebf0ee;
   --letter-colorRC: #3a4a42;
   --h3title-color: #344563;
+  --colordalt: #0e5a3b;
 }
 
 @font-face {
@@ -199,7 +200,7 @@ button:focus {
 }
 
 button:enabled {
-  background: #36b37f;
+  background: var(--colordalt)/*#36b37f*/;
   border-radius: 4px;
 }
 
@@ -344,11 +345,11 @@ ul.language > li > span {
   font-size: 12px;
   line-height: 16px;
   letter-spacing: 0.03em;
-  color: var(--letter-colorRC);
+  color: var(--colordalt);
 }
 
 .buttonCol {
-  background-color: var(--dark-green);
+  background-color: var(--colordalt);
   width: 122px;
   height: 48px;
   border-radius: 8px;
@@ -492,7 +493,7 @@ div.know > div.describe > ul > li {
 }
 
 div.know > div.describe > ul > li > span {
-  color: var(--dark-green);
+  color: #000/*var(--dark-green)*/;
 }
 
 .contact-form {
