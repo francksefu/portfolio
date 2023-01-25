@@ -133,7 +133,7 @@ h1 {
 }
 
 h1 > span {
-  color: var(--dark-green);
+  color: var(--colordalt);
 }
 
 #main section.icon {
