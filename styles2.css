@@ -4,6 +4,7 @@
   --dark-white: #ebf0ee;
   --letter-colorRC: #3a4a42;
   --h3title-color: #344563;
+  --colordalt: #0e5a3b;
 }
 
 @font-face {
@@ -132,7 +133,7 @@ h1 {
 }
 
 h1 > span {
-  color: var(--dark-green);
+  color: var(--colordalt);
 }
 
 #main section.icon {
@@ -199,7 +200,7 @@ button:focus {
 }
 
 button:enabled {
-  background: #36b37f;
+  background: var(--colordalt)/*#36b37f*/;
   border-radius: 4px;
 }
 
@@ -236,11 +237,32 @@ section.recentWork > div.rHeader {
   padding: 0 auto;
 }
 
-section.recentWork > div.rHeader > h1 {
-  margin: 0 auto;
+h2 {
+  text-align: center;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  color: var(--letter-colorRC);
+  padding: 0 auto;
 }
 
-h2 {
+section.recentWork > div.rHeader > h2 {
+  text-align: center;
+  color: var(--text-color1);
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+}
+
+h3 {
+  margin: 0 auto;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  color: var(--h3title-color);
+}
+
+section.recentWork > div.rHeader > h3 {
   text-align: center;
   font-weight: 600;
   font-size: 24px;
@@ -331,11 +353,11 @@ ul.language > li > span {
   font-size: 12px;
   line-height: 16px;
   letter-spacing: 0.03em;
-  color: var(--letter-colorRC);
+  color: var(--colordalt);
 }
 
 .buttonCol {
-  background-color: var(--dark-green);
+  background-color: var(--colordalt);
   width: 122px;
   height: 48px;
   border-radius: 8px;
@@ -443,14 +465,6 @@ div.know > div.contain > div.empty {
   box-shadow: 0 16px 24px rgba(37, 47, 137, 0.08);
 }
 
-h3 {
-  margin: 0 auto;
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 32px;
-  color: var(--h3title-color);
-}
-
 div.know > div.describe {
   width: 100%;
   height: auto;
@@ -479,7 +493,7 @@ div.know > div.describe > ul > li {
 }
 
 div.know > div.describe > ul > li > span {
-  color: var(--dark-green);
+  color: #000/*var(--dark-green)*/;
 }
 
 .contact-form {
@@ -491,6 +505,10 @@ div.know > div.describe > ul > li > span {
   background-repeat: no-repeat;
   background-position: bottom right;
   background-size: 92.14px 131.71px;
+}
+
+label {
+  visibility: hidden;
 }
 
 footer > p {
@@ -715,7 +733,7 @@ footer > div.contentline {
     display: none;
   }
 
-  h1.title > br {
+  h2.title > br {
     display: none;
   }
 
