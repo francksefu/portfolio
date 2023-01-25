@@ -237,15 +237,7 @@ section.recentWork > div.rHeader {
   padding: 0 auto;
 }
 
-section.recentWork > div.rHeader > h2 {
-  text-align: center;
-  color: var(--text-color1);
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 52px;
-}
-
-section.recentWork > div.rHeader > h3 {
+h2 {
   text-align: center;
   font-weight: 600;
   font-size: 24px;
@@ -254,7 +246,23 @@ section.recentWork > div.rHeader > h3 {
   padding: 0 auto;
 }
 
-h2 {
+section.recentWork > div.rHeader > h2 {
+  text-align: center;
+  color: var(--text-color1);
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+}
+
+h3 {
+  margin: 0 auto;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  color: var(--h3title-color);
+}
+
+section.recentWork > div.rHeader > h3 {
   text-align: center;
   font-weight: 600;
   font-size: 24px;
@@ -455,14 +463,6 @@ div.know > div.contain > div.empty {
   border-radius: 50%;
   background-color: #fff;
   box-shadow: 0 16px 24px rgba(37, 47, 137, 0.08);
-}
-
-h3 {
-  margin: 0 auto;
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 32px;
-  color: var(--h3title-color);
 }
 
 div.know > div.describe {
