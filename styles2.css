@@ -43,9 +43,16 @@ a {
   color: var(--text-color1);
 }
 
+nav#x {
+  font-size: 28px;
+  font-weight: 500;
+  display: none;
+}
 div#menu {
+  display: none;
   width: 100%;
   background-color: #fff;
+  height: 100px;
   position: fixed;
   top: 48px;
   z-index: 3;
