@@ -43,10 +43,37 @@ a {
   color: var(--text-color1);
 }
 
+div#menu {
+  width: 100%;
+  background-color: #fff;
+  position: fixed;
+  top: 48px;
+  z-index: 3;
+}
+
+div#menu > ul {
+  display: block;
+  width: 100%;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
+  margin-left: 40%;
+  margin-right: auto;
+}
+
+div#menu > ul > li {
+  margin: 5px auto;
+}
+
 section.icon > ul > li > a {
   height: 20px;
   padding: 8px;
   color: #505f79;
+}
+
+#smallScreen {
+  position: fixed;
+  background-color: #fff;
 }
 
 #smallScreen > a {
@@ -76,6 +103,7 @@ section.icon > ul > li > a {
 }
 
 #main {
+  margin-top: 48px;
   width: 100vw;
   height: 100vh;
   background-image: url(Header-llustration-desktop.svg);
