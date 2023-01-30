@@ -36,6 +36,8 @@ main {
   display: flex;
   justify-content: space-between;
   width: 100%;
+  position: fixed;
+  background-color: #fff;
 }
 
 a {
@@ -48,6 +50,7 @@ nav#x {
   font-weight: 500;
   display: none;
 }
+
 div#menu {
   display: none;
   width: 100%;
@@ -58,29 +61,10 @@ div#menu {
   z-index: 3;
 }
 
-div#menu > ul {
-  display: block;
-  width: 100%;
-  margin-top: 0;
-  margin-bottom: 0;
-  padding: 0;
-  margin-left: 40%;
-  margin-right: auto;
-}
-
-div#menu > ul > li {
-  margin: 5px auto;
-}
-
 section.icon > ul > li > a {
   height: 20px;
   padding: 8px;
   color: #505f79;
-}
-
-#smallScreen {
-  position: fixed;
-  background-color: #fff;
 }
 
 #smallScreen > a {
@@ -511,6 +495,20 @@ div.know > div.describe > ul {
 div.know > div.describe > ul > li {
   background-color: #fff;
   height: 40px;
+}
+
+div#menu > ul {
+  display: block;
+  width: 100%;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
+  margin-left: 40%;
+  margin-right: auto;
+}
+
+div#menu > ul > li {
+  margin: 5px auto;
 }
 
 div.know > div.describe > ul > li > span {
