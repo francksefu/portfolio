@@ -252,7 +252,10 @@ section.recentWork {
 section.recentWork > div.rHeader {
   width: 90vw;
   height: auto;
-  padding: 0 auto;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: auto;
+  padding-right: auto;
 }
 
 section.recentWork > div.rHeader > h1 {
@@ -265,7 +268,10 @@ h2 {
   font-size: 24px;
   line-height: 32px;
   color: var(--letter-colorRC);
-  padding: 0 auto;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: auto;
+  padding-right: auto;
 }
 
 div.detail > div.rHeader > h2 {
@@ -418,7 +424,7 @@ article.text > img {
   width: 127.02px;
   height: 57px;
   position: absolute;
-  left: - calc(127px / 2);
+  left: - 63.5px;
   bottom: 0;
 }
 
@@ -645,7 +651,6 @@ footer > div.contentline {
     margin: auto;
     display: flex;
     flex-direction: row;
-    align-items: space-between;
     gap: 8px;
     padding: 0;
   }
