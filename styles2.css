@@ -254,8 +254,6 @@ section.recentWork > div.rHeader {
   height: auto;
   padding-top: 0;
   padding-bottom: 0;
-  padding-left: auto;
-  padding-right: auto;
 }
 
 section.recentWork > div.rHeader > h1 {
@@ -270,8 +268,6 @@ h2 {
   color: var(--letter-colorRC);
   padding-top: 0;
   padding-bottom: 0;
-  padding-left: auto;
-  padding-right: auto;
 }
 
 div.detail > div.rHeader > h2 {
@@ -424,7 +420,6 @@ article.text > img {
   width: 127.02px;
   height: 57px;
   position: absolute;
-  left: - 63.5px;
   bottom: 0;
 }
 
