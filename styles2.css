@@ -535,11 +535,20 @@ div#menu > div.color > ul > li > a {
 }
 
 .gry {
-  background-color: #E5E5E5;
+  background-color: #e5e5e5;
   width: 100vw;
   height: 57px;
   margin-bottom: 0;
   padding-top: 44px;
+}
+
+.line {
+  width: 134px;
+  height: 5px;
+  background-color: #0d151e;
+  border-radius: 10px;
+  margin: 21px auto 8px auto;
+  padding: 0;
 }
 
 .gry > .line {
@@ -631,15 +640,6 @@ footer {
 footer > div.contentline {
   width: 100%;
   height: 34px;
-}
-
-.line {
-  width: 134px;
-  height: 5px;
-  background-color: #0d151e;
-  border-radius: 10px;
-  margin: 21px auto 8px auto;
-  padding: 0;
 }
 
 .desktop {
