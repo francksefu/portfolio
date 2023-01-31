@@ -21,7 +21,7 @@ function hide() {
   hamber.style.display = 'block';
 }
 
-for (let i = 0; i < other.length; i = i + 1) {
+for (let i = 0; i < other.length; i += 1) {
   other[i].addEventListener('click', hide);
 }
 
