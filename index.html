@@ -10,20 +10,36 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" />
 
     <link rel="stylesheet" href="styles2.css">
+    <script defer src="portfolio.js"></script>
 </head>
 
 <body>
     <!--For deployment-->
     <!--For small screen, this will be display when the screen is less than 768px-->
     <header id="smallScreen">
-        <a href="">Welcome</a>
-        <nav>
+        <a href="#main" class="hide">Welcome</a>
+        <nav id="menu-clic">
             <div class="c1"> </div>
             <div class="c2"> </div>
             <div class="c3"> </div>
         </nav>
+        
+        
     </header>
-    <main>
+    <div id="menu">
+        <div class="color">
+            <nav id="x">&cross;</nav>
+            <ul>
+                <li class="hide"><a href="#recent">Portoflio</a></li>
+                <li class="hide"><a href="#about">About</a></li>
+                <li class="hide"><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+        <div class="gry">
+            <div class="line"></div>
+        </div>
+    </div>
+    <main id="contain">
         <section id="main">
             <!--For big screen, this will be hide when screen is less than 768px(just navigation)-->
             <nav class="navigation">
@@ -86,7 +102,7 @@
 
         <!--Build Recent work section-->
 
-        <section class="recentWork">
+        <section class="recentWork" id="recent">
             <div class="rHeader title">
                 <h1 class="title">My Recent<br> Works</h1>
                 <div class="bar"> </div>
@@ -198,7 +214,7 @@
 
         <!--Build the section about myself-->
 
-        <section class="aboutMe">
+        <section class="aboutMe" id="about">
             <article class="text">
                 <div class="rHeader">
                     <h2>About me</h2>
@@ -320,7 +336,7 @@
     </main>
 
 
-    <footer>
+    <footer id="contact">
         <p class="mobile">francksefu1998@gmail.com</p>
         <div class="contentline mobile">
             <div class="line"></div>
