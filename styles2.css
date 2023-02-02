@@ -28,10 +28,6 @@ main {
   grid-template-columns: 1fr;
 }
 
-#see-project {
-  display: none;
-}
-
 /* As we see in fring template, when we have a mobile device, the nav tag
   is before the #main part, and it have space around
 */
