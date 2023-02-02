@@ -30,7 +30,7 @@
 <!-- PROJECT DESCRIPTION -->
 # 📖 <a name="about-project">Portfolio</a>
 > In this project, I create my portfolio, I can call it, my cv, certainly, it's evolved day by day, but in December of this year(2023), it will be pretty and presentable with the help of Microverse.
-## 🛠 Built With <a name="built-with">HTML, CSS and Linter</a>
+## 🛠 Built With <a name="built-with">HTML, CSS, JavaScript and Linter</a>
 ### Tech Stack <a name="tech-stack"></a>
 > In this project we use just one page html and his document css to make it pretty
 <details>
@@ -38,6 +38,7 @@
   <ul>
     <li><a href="#">index2.html</a></li>
     <li><a href="#">styles2.css</a></li>
+    <li><a href="#">portfolio.js</a></li>
   </ul>
 </details>
 
@@ -76,7 +77,17 @@ To run the project, open the html folder in your navigator
 - GitHub: [@githubhandle](https://github.com/francksefu)
 - Twitter: [@twitterhandle](https://twitter.com/franck_sefu)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/franck-sefu-884705254/)
-👤 
+
+👤 Jaime Villegas
+- GitHub: [@githubhandle](https://github.com/jaimevillegas)
+- Twitter: [@twitterhandle](https://twitter.com/JaimeVillegazz)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/villegas0296/)
+
+👤 **Iheagwara Augustine**
+
+- GitHub: [@githubhandle](https://github.com/stino-x)
+- Twitter: [@twitterhandle](https://twitter.com/Stino_x_Uncaged)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 <!-- FUTURE FEATURES -->
 ## 🔭 Future Features <a name="future-features">Make it dynamic</a>
@@ -88,6 +99,8 @@ To run the project, open the html folder in your navigator
 <!-- CONTRIBUTING -->
 ## 🤝 Contributing <a name="contributing"></a>
 Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](https://github.com/francksefu/portfolio/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 <!-- SUPPORT -->
