@@ -46,20 +46,18 @@ x.addEventListener('click', displ);
 
 /** Content (style of div, p and soon) */
 
-
 const mainContent1 = [
   { mainImg: { alt: 'project picture', src: 'imgSeeP/Snapshoot Portfolio.png' } },
   { h2: { textContent: 'Keeping track of hundreds of components' } },
   { ul_li_content: ['Ruby on rails', 'css', 'JavaScript'] },
   {
-  p_textcontent: `
+    p_textcontent: `
   Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
   text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea
   `,
   },
   { button: { see_Project_href: '#', see_Source_href: '#' } },
 ];
-
 
 const mainContentD = [
   { mainImg: { alt: 'project picture desktop', src: 'imgSeeP/desktop-img-main.png' } },
@@ -74,13 +72,12 @@ const mainContentD = [
   { button: { see_Project_href: '#', see_Source_href: '#' } },
 ];
 
-
 function deleteChild(e) {
-    
+
   let child = e.lastElementChild;
   while (child) {
-      e.removeChild(child);
-      child = e.lastElementChild;
+    e.removeChild(child);
+    child = e.lastElementChild;
   }
 }
 
@@ -105,13 +102,12 @@ window.addEventListener('load', () => {
   const but4 = document.querySelector('#i4');
   const but5 = document.querySelector('#i5');
   but0.addEventListener('click', () => {
-
     main.style.filter = 'blur(5px)';
     deleteChild(div0);
 
     if (div0.style.display === 'flex') {
       div0.style.display = 'none';
-    }else {
+    } else {
       div0.style.display = 'flex';
     }
 
@@ -120,36 +116,31 @@ window.addEventListener('load', () => {
   });
 
   but1.addEventListener('click', () => {
-
-    main.style.filter = 'blur(5px)'
+    main.style.filter = 'blur(5px)';
     deleteChild(div1);
     if (div1.style.display === 'flex') {
-
       div1.style.display = 'none';
     } else {
       div1.style.display = 'flex';
     }
 
-    project(but1, mainContent1, mainContentD,div1);    
+    project(but1, mainContent1, mainContentD,div1);
+    
   });
-
   but2.addEventListener('click', () => {
-
-    main.style.filter = 'blur(5px)'
+    main.style.filter = 'blur(5px)';
     deleteChild(div2);
-    if(div2.style.display === 'flex'){
+    if (div2.style.display === 'flex') {
       div2.style.display = 'none';
-    }else {
+    } else {
       div2.style.display = 'flex';
     }
 
-    project(but2, mainContent1, mainContentD,div2);
+    project(but2, mainContent1, mainContentD, div2);
         
   });
-
   but3.addEventListener('click', () => {
-
-    main.style.filter = 'blur(5px)'
+    main.style.filter = 'blur(5px)';
     deleteChild(div3);
     if (div3.style.display === 'flex') {
       div3.style.display = 'none';
@@ -159,24 +150,19 @@ window.addEventListener('load', () => {
 
     project(but3, mainContent1, mainContentD,div3);    
 });
+but4.addEventListener('click', () => {
+  main.style.filter = 'blur(5px)';
+  deleteChild(div4);
+  if (div4.style.display === 'flex') {
+    div4.style.display = 'none';
+  } else {
+    div4.style.display = 'flex';
+  }
 
-  but4.addEventListener('click', () => {
-
-    main.style.filter = 'blur(5px)'
-    deleteChild(div4);
-    if (div4.style.display === 'flex') {
-      div4.style.display = 'none';
-    } else {
-      div4.style.display = 'flex';
-    }
-
-    project(but4, mainContent1, mainContentD,div4);
-        
+    project(but4, mainContent1, mainContentD, div4);
   });
-
   but5.addEventListener('click', () => {
-
-    main.style.filter = 'blur(5px)'
+    main.style.filter = 'blur(5px)';
     deleteChild(div5);
     if (div5.style.display === 'flex') {
       div5.style.display = 'none';
@@ -186,7 +172,6 @@ window.addEventListener('load', () => {
 
     project(but5, mainContent1, mainContentD,div5);
  });
-    
 });
 
 function project(buttonCheckProject, mainContent, mainContentD, div) {
@@ -483,12 +468,14 @@ function project(buttonCheckProject, mainContent, mainContentD, div) {
       main.style.filter = 'blur(8px);';
       foot.style.filter = 'blur(8px);';
     });
+
     span1.addEventListener('click', () => {
       div.style.display = 'none';
       main.style.display = 'block';
       foot.style.display = 'block';
-      main.style.filter= 'blur(0px)'
+      main.style.filter = 'blur(0px)';
     });
+  
     /** End of desktop */
   } else {
     /** Affectation */
@@ -580,7 +567,7 @@ function project(buttonCheckProject, mainContent, mainContentD, div) {
       main.style.display = 'block';
       foot.style.display = 'block';
       navBarMobile.style.display = 'flex';
-      main.style.filter= 'blur(0px)'
+      main.style.filter = 'blur(0px)';
     });
   }
 }
@@ -601,11 +588,11 @@ function loadingI() {
   maman.insertBefore(section, addBeforethis);
   section.appendChild(divtitle);
   divtitle.appendChild(h1);
-  h1.innerHTML = 'My Recent<br> Works'
+  h1.innerHTML = 'My Recent<br> Works';
   divtitle.appendChild(divbar);
 
   for (let j = 0; j < 6; j += 1) {
-    let id = 'i' + j;
+    const id = 'i' + j;
     const article1 = document.createElement('article');
     const divVide = document.createElement('div');
     const divDetail = document.createElement('div');
@@ -643,9 +630,3 @@ function loadingI() {
     spanButton.textContent = 'See Project';
   }
 }
-
-
-
-
-    
-
