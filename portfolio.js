@@ -97,12 +97,12 @@ const mainContent = [
   { h2: { textContent: 'Keeping track of hundreds of components' } },
   { ul_li_content: ['Ruby on rails', 'css', 'JavaScript'] },
   {
-     p_textcontent: `
+    p_textcontent: `
    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
    text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea
-   `, 
+   `,
   },
-  { button: { see_Project_href: '#', see_Source_href: '#', }, },
+  { button: { see_Project_href: '#', see_Source_href: '#', } }
 ];
 
 const contentptagbuttonC = {
@@ -199,11 +199,11 @@ if (screen.matches) {
   mainContent[1] = { h2: { textContent: 'Keeping track of hundreds of components' } };
   mainContent[2] = { ul_li_content: ['Codekit', 'GitHub', 'JavaScript', 'Bootstrap'] };
   mainContent[3] = { 
-    p_textcontent: `
+  p_textcontent: `
   Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem 
   Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea
-  `
-};
+  `,
+  };
   mainContent[4] = { button: { see_Project_href: '#', see_Source_href: '#' } };
 
   divC.css = `background-color: #c1c7d0;
@@ -303,7 +303,7 @@ if (screen.matches) {
     img1.style.cssText = buttonC.a1.css;
     a1.appendChild(img1)
     button.appendChild(a1);
-  };
+  }
 
   for (let i = 0; i < 1; i += 1) {
     const button = document.createElement('button');
@@ -331,7 +331,7 @@ if (screen.matches) {
     img1.style.cssText = buttonC.a1.css;
     a1.appendChild(img1);
     button.appendChild(a1);
-  };
+  }
 
   divContent.appendChild(ul);
 
@@ -344,25 +344,21 @@ if (screen.matches) {
     span.style.cssText = ulC.liC.spanC.css;
     ulC.liC.spanC.textContent = mainContent[2].ul_li_content[i];
     span.textContent = ulC.liC.spanC.textContent;
-  };
+  }
 
   divContent.appendChild(p);
   buttonCheckProject.addEventListener('click', () => {
-
     div.style.display = 'block';
     main.style.display = 'none';
     foot.style.display = 'none';
   });
   span1.addEventListener('click', () => {
-
     div.style.display = 'none';
     main.style.display = 'block';
     foot.style.display = 'block';
   });
   /** End of desktop */
-
 } else {
-
   /** Affectation */
 
   contentSpan.style.cssText = spanallC.css;
