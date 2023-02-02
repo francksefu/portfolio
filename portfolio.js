@@ -79,14 +79,14 @@ x.addEventListener('click', displ);
 
 const divC = {
 
-   css:`background-color: #c1c7d0;
+  css: `background-color: #c1c7d0;
   width: 100%; height: auto; padding-top: 20px; padding-bottom: 26px;
   padding-left: 16px; padding-right: 16px;`,
 };
 
 const div1C = {
 
-   css:`padding-top: 16px; display: flex; gap: 12px;
+  css: `padding-top: 16px; display: flex; gap: 12px;
   flex-direction: column; align-items: flex-start;
   background-color: white; border-radius: 16px; border: 1px solid #dfe1e6; padding-left: 16px;
   padding-right: 16px; padding-bottom: 20px;`,
@@ -96,11 +96,13 @@ const mainContent = [
   { mainImg: { alt: 'project picture', src: 'imgSeeP/Snapshoot Portfolio.png' } },
   { h2: { textContent: 'Keeping track of hundreds of components' } },
   { ul_li_content: ['Ruby on rails', 'css', 'JavaScript'] },
-  { p_textcontent: `
+  {
+     p_textcontent: `
    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
    text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea
-   ` },
-  { button: { see_Project_href: '#', see_Source_href: '#', } }
+   `, 
+  },
+  { button: { see_Project_href: '#', see_Source_href: '#', }, },
 ];
 
 const contentptagbuttonC = {
@@ -110,7 +112,7 @@ const contentptagbuttonC = {
 
 const spanallC = {
 
-   css: `width: 100%; height: auto; padding: 0; margin: 0;
+  css: `width: 100%; height: auto; padding: 0; margin: 0;
   display: flex; flex-direction: row; justify-content: space-between;`,
 };
 
@@ -178,7 +180,7 @@ const buttonC = {
   a1: {
     href: mainContent[4].button.see_Source_href,
     imgC: {
-       src:'imgSeeP/Icon - Export.png',
+      src: 'imgSeeP/Icon - Export.png',
       alt: 'icon',
     },
     css: 'width: 20px; height: 20px;',
@@ -196,24 +198,26 @@ if (screen.matches) {
   mainContent[0] = { mainImg: { alt: 'project picture desktop', src: 'imgSeeP/desktop-img-main.png' } };
   mainContent[1] = { h2: { textContent: 'Keeping track of hundreds of components' } };
   mainContent[2] = { ul_li_content: ['Codekit', 'GitHub', 'JavaScript', 'Bootstrap'] };
-  mainContent[3] = { p_textcontent: `
+  mainContent[3] = { 
+    p_textcontent: `
   Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem 
   Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea
-  ` };
+  `
+};
   mainContent[4] = { button: { see_Project_href: '#', see_Source_href: '#' } };
 
   divC.css = `background-color: #c1c7d0;
   width: 100%; height: auto; padding-top: 122px; padding-bottom: 201px; padding-left: 18%; padding-right: 18%;`;
- 
+
   div1C.css = `padding-top: 24px; display: flex; gap: 12px;
   flex-direction: column; align-items: flex-start;
   background-color: white; border-radius: 16px; border: 1px solid #dfe1e6; padding-left: 24px;
   padding-right: 24px; padding-bottom: 44px; height: auto;`;
 
   imgC.css = 'width: 100%; height: 616px; border-radius: 8px; border: 1px solid #dfe1e6; margin-bottom: 12px;';
-  
+
   imgC.src = mainContent[0].mainImg.src;
-  
+
   ulC.liC.css = `background: #ebf0ee; border-radius: 8px; height: 32px;
   padding: 8px 12px;`;
 
@@ -224,15 +228,15 @@ if (screen.matches) {
   gap: 10px; background: #36b37f; border-radius: 8px; height: 48px`;
 
   buttonC.a0.css = 'font-weight: 500; font-size: 15px; line-height: 20px; color: #fff;';
-  
+
   h2C.css = `width: 67%; height: auto; font-weight: 700;
   font-size: 32px; line-height: 44px; color: #172b4d; margin-top: 0;
   margin-bottom: 0; text-align: start;`;
 
   pC.css = `font-weight: 400; font-size: 16px; line-height: 24px; color: #344563; height: auto;
   padding: 0; margin: 0; text-align: start; margin-top: 24px;`;
-  
-  cross.css = `width: 24px; height: 24px;`;
+
+  cross.css = 'width: 24px; height: 24px;';
   cross.src = 'imgSeeP/cancel1.png';
   cross.alt = 'cancel';
   cross.cssSpan = `width: 40px; height: 40px;
@@ -297,7 +301,7 @@ if (screen.matches) {
     img1.src = buttonC.a1.imgC.src;
     img1.alt = buttonC.a1.imgC.alt;
     img1.style.cssText = buttonC.a1.css;
-    a1.appendChild(img1);
+    a1.appendChild(img1)
     button.appendChild(a1);
   };
 
@@ -343,25 +347,21 @@ if (screen.matches) {
   };
 
   divContent.appendChild(p);
-
   buttonCheckProject.addEventListener('click', () => {
 
     div.style.display = 'block';
     main.style.display = 'none';
     foot.style.display = 'none';
   });
-  
   span1.addEventListener('click', () => {
 
     div.style.display = 'none';
     main.style.display = 'block';
     foot.style.display = 'block';
   });
-
   /** End of desktop */
 
 } else {
-
 
   /** Affectation */
 
@@ -425,7 +425,7 @@ if (screen.matches) {
     button.appendChild(a1);
   }
 
-  for  (let i = 0; i < 1; i += 1) {
+  for (let i = 0; i < 1; i += 1) {
     const button = document.createElement('button');
     button.style.cssText = buttonC.css;
     divButton.appendChild(button);
@@ -433,7 +433,7 @@ if (screen.matches) {
     const a1 = document.createElement('a');
     const img1 = document.createElement('img');
     a.href = buttonC.a0.href;
-    buttonC.a0.textContent = "See Source";
+    buttonC.a0.textContent = 'See Source';
     a.textContent = buttonC.a0.textContent;
     a.style.cssText = buttonC.a0.css;
     button.appendChild(a);
