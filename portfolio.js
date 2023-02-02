@@ -183,6 +183,12 @@ const buttonC = {
 var screen = window.matchMedia('(min-width: 768px)');
 
 if(screen.matches) {
+  mainContent[0] = {mainImg: {alt: 'project picture desktop', src: 'imgSeeP/desktop-img-main.png'}};
+  mainContent[1] = {h2: {textContent: `Keeping track of hundreds of components`}};
+  mainContent[2] = {ul_li_content:['Codekit', 'GitHub', 'JavaScript', 'Bootstrap']};
+  mainContent[3] = {p_textcontent: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea`};
+  mainContent[4] = {button:{see_Project_href: '#', see_Source_href: '#'}};
+
   divC.css =`background-color: #c1c7d0;
   width: 100%; height: auto; padding-top: 122px; padding-bottom: 201px;
   padding-left: 18%; padding-right: 18%;`;
@@ -193,7 +199,7 @@ if(screen.matches) {
   padding-right: 24px; padding-bottom: 44px; height: auto;`;
 
   imgC.css = `width: 100%; height: 616px; border-radius: 8px; border: 1px solid #dfe1e6; margin-bottom: 12px;`;
-  imgC.src = 'imgSeeP/desktop-img-main.png';
+  imgC.src = mainContent[0].mainImg.src;
   
   ulC.liC.css = `background: #ebf0ee; border-radius: 8px; height: 32px;
   padding: 8px 12px;`;
@@ -337,5 +343,106 @@ if(screen.matches) {
   });
 
   /** End of desktop */
-   
+
+}else {
+
+  /** Affectation */
+
+  contentSpan.style.cssText = spanallC.css;
+  broSpan.style.cssText = spanbro.css;
+  div.style.cssText = divC.css;
+  divContent.style.cssText = div1C.css;
+  img.style.cssText = imgC.css;
+  img.src = imgC.src;
+  img.alt = imgC.alt;
+  span1.style.cssText = cross.cssSpan;
+  imgC1.style.cssText = cross.css;
+  imgC1.src = cross.src;
+  imgC1.alt = cross.alt;
+  h2.style.cssText = h2C.css;
+  h2.textContent = h2C.textContent;
+  ul.style.cssText = ulC.css;
+  p.style.cssText = pC.css;
+  p.textContent = pC.textContent;
+  divButton.style.cssText = divButtonC.css;
+
+  /** Add to DOM */
+ 
+  div.appendChild(divContent);
+  divContent.appendChild(span1);
+  divContent.appendChild(img);
+  span1.appendChild(imgC1);
+  divContent.appendChild(h2);
+  divContent.appendChild(ul);
+  divContent.appendChild(p);
+  divContent.appendChild(divButton);
+
+for(let i = 0; i < mainContent[2].ul_li_content.length; i++) {
+  let li = document.createElement('li');
+  let span = document.createElement('span');
+  ul.appendChild(li);
+  li.appendChild(span);
+  li.style.cssText = ulC.liC.css;
+  span.style.cssText = ulC.liC.spanC.css;
+  ulC.liC.spanC.textContent = mainContent[2].ul_li_content[i];
+  span.textContent = ulC.liC.spanC.textContent;
+}
+
+for(let i = 0; i < 1; i++) {
+  let button = document.createElement('button');
+  button.style.cssText = buttonC.css;
+  divButton.appendChild(button);
+  let a = document.createElement('a');
+  let a1 = document.createElement('a');
+  let img1 = document.createElement('img');
+  a.href = buttonC.a0.href;
+  a.textContent = buttonC.a0.textContent;
+  a.style.cssText = buttonC.a0.css;
+  button.appendChild(a);
+  a1.style.cssText = buttonC.a0.css;
+  a1.href = buttonC.a1.href;
+  img1.src = buttonC.a1.imgC.src;
+  img1.alt = buttonC.a1.imgC.alt;
+  img1.style.cssText = buttonC.a1.css;
+  a1.appendChild(img1);
+  button.appendChild(a1);
+}
+
+for(let i = 0; i < 1; i++) {
+  let button = document.createElement('button');
+  button.style.cssText = buttonC.css;
+  divButton.appendChild(button);
+  let a = document.createElement('a');
+  let a1 = document.createElement('a');
+  let img1 = document.createElement('img');
+  a.href = buttonC.a0.href;
+  //update text content button
+  buttonC.a0.textContent = "See Source";
+  a.textContent = buttonC.a0.textContent;
+  a.style.cssText = buttonC.a0.css;
+  button.appendChild(a);
+  a1.style.cssText = buttonC.a1.css;
+  a1.href = buttonC.a1.href;
+  //update img button
+  buttonC.a1.imgC.src = 'imgSeeP/git1.png';
+  img1.src = buttonC.a1.imgC.src;
+  img1.alt = buttonC.a1.imgC.alt;
+  img1.style.cssText = buttonC.a1.css;
+  a1.appendChild(img1);
+  button.appendChild(a1);
+}
+
+  buttonCheckProject.addEventListener('click', () => {
+    div.style.display = 'block';
+    main.style.display = 'none';
+    foot.style.display = 'none';
+    navBarMobile.style.display = 'none';
+  });
+
+  span1.addEventListener('click', () => {
+    div.style.display = 'none';
+    main.style.display = 'block';
+    foot.style.display = 'block';
+    navBarMobile.style.display = 'flex';
+  });
 }
