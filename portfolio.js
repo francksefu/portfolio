@@ -218,7 +218,6 @@ function project(buttonCheckProject, mainContent, mainContentD, div) {
 
   /** Responsive design */
   if (screen.matches) {
-
     buttonC.a1.href = mainContentD[4].button.see_Source_href;
 
     buttonC.a0.href = mainContentD[4].button.see_Source_href;
@@ -495,7 +494,7 @@ function loadingI() {
   divtitle.appendChild(divbar);
 
   for (let j = 0; j < 6; j += 1) {
-    const id = `i` + j;
+    const id = 'i'.concat(j);
     const article1 = document.createElement('article');
     const divVide = document.createElement('div');
     const divDetail = document.createElement('div');
@@ -606,7 +605,7 @@ window.addEventListener('load', () => {
       div4.style.display = 'flex';
     }
 
-      project(but4, mainContent1, mainContentD, div4);
+    project(but4, mainContent1, mainContentD, div4);
   });
   but5.addEventListener('click', () => {
     main.style.filter = 'blur(5px)';
@@ -618,5 +617,5 @@ window.addEventListener('load', () => {
     }
 
     project(but5, mainContent1, mainContentD, div5);
- });
+  });
 });
