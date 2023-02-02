@@ -293,6 +293,7 @@ div.look {
   margin: 0;
   padding: 0;
 }
+
 div.look > article {
   width: 100%;
 }
@@ -783,6 +784,10 @@ footer > div.contentline {
     width: 100%;
   }
 
+  section.recentWork > article {
+    max-width: 369px;
+  }
+
   section.recentWork > div.look > article {
     width: 100%;
   }
@@ -807,10 +812,6 @@ footer > div.contentline {
 
   h1.title > br {
     display: none;
-  }
-
-  section.recentWork > article {
-    max-width: 369px;
   }
 
   ul.language {
