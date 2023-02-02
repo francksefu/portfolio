@@ -102,7 +102,7 @@ const mainContent = [
    text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea
    `,
   },
-  { button: { see_Project_href: '#', see_Source_href: '#', } }
+  { button: { see_Project_href: '#', see_Source_href: '#' } },
 ];
 
 const contentptagbuttonC = {
@@ -198,8 +198,8 @@ if (screen.matches) {
   mainContent[0] = { mainImg: { alt: 'project picture desktop', src: 'imgSeeP/desktop-img-main.png' } };
   mainContent[1] = { h2: { textContent: 'Keeping track of hundreds of components' } };
   mainContent[2] = { ul_li_content: ['Codekit', 'GitHub', 'JavaScript', 'Bootstrap'] };
-  mainContent[3] = { 
-  p_textcontent: `
+  mainContent[3] = {
+    p_textcontent: `
   Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem 
   Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea
   `,
@@ -301,7 +301,7 @@ if (screen.matches) {
     img1.src = buttonC.a1.imgC.src;
     img1.alt = buttonC.a1.imgC.alt;
     img1.style.cssText = buttonC.a1.css;
-    a1.appendChild(img1)
+    a1.appendChild(img1);
     button.appendChild(a1);
   }
 
