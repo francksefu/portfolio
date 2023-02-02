@@ -289,14 +289,22 @@ div.detail > div.rHeader > h2 {
   margin-top: 24px;
 }
 
-section.recentWork > article {
+div.look {
+  margin: 0;
+  padding: 0;
+}
+div.look > article {
+  width: 100%;
+}
+
+section.recentWork > div > article {
   width: 90vw;
   border-radius: 8px;
   background-color: var(--dark-white);
   border: 1px solid #d0d9d4;
 }
 
-section.recentWork > article > div {
+section.recentWork > div > article > div {
   width: 100%;
 }
 
@@ -306,7 +314,7 @@ section.recentWork > article > div {
   height: 45vh;
 }
 
-section.recentWork > article > div.detail {
+section.recentWork > div > article > div.detail {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -325,7 +333,7 @@ section.headline > button:hover {
   background-color: #36b37f;
 }
 
-section.recentWork > article > div.detail > button {
+section.recentWork > div > article > div.detail > button {
   margin-bottom: 8px;
 }
 
@@ -765,8 +773,18 @@ footer > div.contentline {
     margin-right: auto;
     justify-content: space-between;
     row-gap: 24px;
-    column-gap: 32px;
+    column-gap: 22px;
     margin-bottom: 28px;
+  }
+
+  section.recentWork > div.look {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+
+  section.recentWork > div.look > article {
+    width: 100%;
   }
 
   div.title {

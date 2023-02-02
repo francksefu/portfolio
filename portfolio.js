@@ -241,11 +241,11 @@ function project(buttonCheckProject, mainContent, mainContentD, div) {
     padding: 0px; gap: 8px; margin-bottom: 0; margin-top: 8px;`;
 
     buttonC.css = `display: flex; flex-direction: row; align-items: center; padding: 12px;
-    gap: 10px; background: #36b37f; border-radius: 8px; height: 48px`;
+    gap: 10px; background: #36b37f; border-radius: 8px; height: 48px; width: 115px;`;
 
     buttonC.a0.css = 'font-weight: 500; font-size: 15px; line-height: 20px; color: #fff;';
 
-    h2C.css = `width: 67%; height: auto; font-weight: 700;
+    h2C.css = `width: 589px; height: auto; font-weight: 700;
     font-size: 32px; line-height: 44px; color: #172b4d; margin-top: 0;
     margin-bottom: 0; text-align: start;`;
 
@@ -325,7 +325,8 @@ function project(buttonCheckProject, mainContent, mainContentD, div) {
 
     for (let i = 0; i < 1; i += 1) {
       const button = document.createElement('button');
-      button.style.cssText = buttonC.css;
+      button.style.cssText = `display: flex; flex-direction: row; align-items: center; padding: 12px;
+      gap: 10px; background: #36b37f; border-radius: 8px; height: 48px; width: 141px;`;
       contentptagbutton.appendChild(button);
       const a = document.createElement('a');
       const a1 = document.createElement('a');
@@ -495,6 +496,7 @@ function loadingI() {
 
   for (let j = 0; j < 6; j += 1) {
     const id = 'i'.concat(j);
+    const divArticle = document.createElement('div');
     const article1 = document.createElement('article');
     const divVide = document.createElement('div');
     const divDetail = document.createElement('div');
@@ -503,6 +505,7 @@ function loadingI() {
     const ul = document.createElement('ul');
     const buttonCol = document.createElement('button');
     const spanButton = document.createElement('span');
+    divArticle.classList.add('look');
     divVide.classList.add('vide');
     divDetail.classList.add('detail');
     divRHeader.classList.add('rHeader');
@@ -510,7 +513,8 @@ function loadingI() {
     buttonCol.classList.add('buttonCol');
     buttonCol.classList.add('.ecoute');
     buttonCol.setAttribute('id', id);
-    section.appendChild(article1);
+    section.appendChild(divArticle);
+    divArticle.appendChild(article1);
     article1.appendChild(divVide);
     article1.appendChild(divDetail);
     divDetail.appendChild(divRHeader);
