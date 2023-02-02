@@ -245,7 +245,7 @@ function project(buttonCheckProject, mainContent, mainContentD, div) {
 
     buttonC.a0.css = 'font-weight: 500; font-size: 15px; line-height: 20px; color: #fff;';
 
-    h2C.css = `width: 589px; height: auto; font-weight: 700;
+    h2C.css = `max-width: 589px; width:67%; height: auto; font-weight: 700;
     font-size: 32px; line-height: 44px; color: #172b4d; margin-top: 0;
     margin-bottom: 0; text-align: start;`;
 
