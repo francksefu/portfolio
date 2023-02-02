@@ -71,111 +71,15 @@ const mainContentD = [
   },
   { button: { see_Project_href: '#', see_Source_href: '#' } },
 ];
-
 function deleteChild(e) {
-
   let child = e.lastElementChild;
   while (child) {
     e.removeChild(child);
     child = e.lastElementChild;
   }
 }
-
-window.addEventListener('load', () => {
-  loadingI();
-  const div0 = document.createElement('div');
-  const div1 = document.createElement('div');
-  const div2 = document.createElement('div');
-  const div3 = document.createElement('div');
-  const div4 = document.createElement('div');
-  const div5 = document.createElement('div');
-  document.body.insertBefore(div0, main);
-  document.body.insertBefore(div1, main);
-  document.body.insertBefore(div2, main);
-  document.body.insertBefore(div3, main);
-  document.body.insertBefore(div4, main);
-  document.body.insertBefore(div5, main);
-  const but0 = document.querySelector('#i0');
-  const but1 = document.querySelector('#i1');
-  const but2 = document.querySelector('#i2');
-  const but3 = document.querySelector('#i3');
-  const but4 = document.querySelector('#i4');
-  const but5 = document.querySelector('#i5');
-  but0.addEventListener('click', () => {
-    main.style.filter = 'blur(5px)';
-    deleteChild(div0);
-
-    if (div0.style.display === 'flex') {
-      div0.style.display = 'none';
-    } else {
-      div0.style.display = 'flex';
-    }
-
-    project(but0, mainContent1, mainContentD,div0);
-
-  });
-
-  but1.addEventListener('click', () => {
-    main.style.filter = 'blur(5px)';
-    deleteChild(div1);
-    if (div1.style.display === 'flex') {
-      div1.style.display = 'none';
-    } else {
-      div1.style.display = 'flex';
-    }
-
-    project(but1, mainContent1, mainContentD,div1);
-    
-  });
-  but2.addEventListener('click', () => {
-    main.style.filter = 'blur(5px)';
-    deleteChild(div2);
-    if (div2.style.display === 'flex') {
-      div2.style.display = 'none';
-    } else {
-      div2.style.display = 'flex';
-    }
-
-    project(but2, mainContent1, mainContentD, div2);
-        
-  });
-  but3.addEventListener('click', () => {
-    main.style.filter = 'blur(5px)';
-    deleteChild(div3);
-    if (div3.style.display === 'flex') {
-      div3.style.display = 'none';
-    } else {
-      div3.style.display = 'flex';
-    }
-
-    project(but3, mainContent1, mainContentD,div3);    
-});
-but4.addEventListener('click', () => {
-  main.style.filter = 'blur(5px)';
-  deleteChild(div4);
-  if (div4.style.display === 'flex') {
-    div4.style.display = 'none';
-  } else {
-    div4.style.display = 'flex';
-  }
-
-    project(but4, mainContent1, mainContentD, div4);
-  });
-  but5.addEventListener('click', () => {
-    main.style.filter = 'blur(5px)';
-    deleteChild(div5);
-    if (div5.style.display === 'flex') {
-      div5.style.display = 'none';
-    } else {
-      div5.style.display = 'flex';
-    }
-
-    project(but5, mainContent1, mainContentD,div5);
- });
-});
-
 function project(buttonCheckProject, mainContent, mainContentD, div) {
-    /** See project part variable */
+  /** See project part variable */
   const screen = window.matchMedia('(min-width: 768px)');
   const navBarMobile = document.querySelector('#smallScreen');
   const divContent = document.createElement('div');
@@ -223,7 +127,7 @@ function project(buttonCheckProject, mainContent, mainContentD, div) {
   const divButtonParagC = {
 
     css: 'display: flex; flex-direction: row; justify-content: space-between; padding: 0px; height: auto;',
-  }
+  };
 
   const contentptagbuttonC = {
 
@@ -313,7 +217,6 @@ function project(buttonCheckProject, mainContent, mainContentD, div) {
   };
 
   /** Responsive design */
-
   if (screen.matches) {
 
     buttonC.a1.href = mainContentD[4].button.see_Source_href;
@@ -475,7 +378,7 @@ function project(buttonCheckProject, mainContent, mainContentD, div) {
       foot.style.display = 'block';
       main.style.filter = 'blur(0px)';
     });
-  
+
     /** End of desktop */
   } else {
     /** Affectation */
@@ -592,7 +495,7 @@ function loadingI() {
   divtitle.appendChild(divbar);
 
   for (let j = 0; j < 6; j += 1) {
-    const id = 'i' + j;
+    const id = `i` + j;
     const article1 = document.createElement('article');
     const divVide = document.createElement('div');
     const divDetail = document.createElement('div');
@@ -630,3 +533,90 @@ function loadingI() {
     spanButton.textContent = 'See Project';
   }
 }
+
+window.addEventListener('load', () => {
+  loadingI();
+  const div0 = document.createElement('div');
+  const div1 = document.createElement('div');
+  const div2 = document.createElement('div');
+  const div3 = document.createElement('div');
+  const div4 = document.createElement('div');
+  const div5 = document.createElement('div');
+  document.body.insertBefore(div0, main);
+  document.body.insertBefore(div1, main);
+  document.body.insertBefore(div2, main);
+  document.body.insertBefore(div3, main);
+  document.body.insertBefore(div4, main);
+  document.body.insertBefore(div5, main);
+  const but0 = document.querySelector('#i0');
+  const but1 = document.querySelector('#i1');
+  const but2 = document.querySelector('#i2');
+  const but3 = document.querySelector('#i3');
+  const but4 = document.querySelector('#i4');
+  const but5 = document.querySelector('#i5');
+  but0.addEventListener('click', () => {
+    main.style.filter = 'blur(5px)';
+    deleteChild(div0);
+
+    if (div0.style.display === 'flex') {
+      div0.style.display = 'none';
+    } else {
+      div0.style.display = 'flex';
+    }
+    project(but0, mainContent1, mainContentD, div0);
+  });
+
+  but1.addEventListener('click', () => {
+    main.style.filter = 'blur(5px)';
+    deleteChild(div1);
+    if (div1.style.display === 'flex') {
+      div1.style.display = 'none';
+    } else {
+      div1.style.display = 'flex';
+    }
+    project(but1, mainContent1, mainContentD, div1);
+  });
+  but2.addEventListener('click', () => {
+    main.style.filter = 'blur(5px)';
+    deleteChild(div2);
+    if (div2.style.display === 'flex') {
+      div2.style.display = 'none';
+    } else {
+      div2.style.display = 'flex';
+    }
+    project(but2, mainContent1, mainContentD, div2);
+  });
+  but3.addEventListener('click', () => {
+    main.style.filter = 'blur(5px)';
+    deleteChild(div3);
+    if (div3.style.display === 'flex') {
+      div3.style.display = 'none';
+    } else {
+      div3.style.display = 'flex';
+    }
+
+    project(but3, mainContent1, mainContentD, div3);
+  });
+  but4.addEventListener('click', () => {
+    main.style.filter = 'blur(5px)';
+    deleteChild(div4);
+    if (div4.style.display === 'flex') {
+      div4.style.display = 'none';
+    } else {
+      div4.style.display = 'flex';
+    }
+
+      project(but4, mainContent1, mainContentD, div4);
+  });
+  but5.addEventListener('click', () => {
+    main.style.filter = 'blur(5px)';
+    deleteChild(div5);
+    if (div5.style.display === 'flex') {
+      div5.style.display = 'none';
+    } else {
+      div5.style.display = 'flex';
+    }
+
+    project(but5, mainContent1, mainContentD, div5);
+ });
+});
