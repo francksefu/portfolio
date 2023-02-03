@@ -21,4 +21,11 @@ function validateEmail() {
     }
 }
 
+form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    if(validateEmail()) {
+        form.submit();
+    }
+});
+
 

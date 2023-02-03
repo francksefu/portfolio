@@ -11,6 +11,7 @@
 
     <link rel="stylesheet" href="styles2.css">
     <script defer src="portfolio.js"></script>
+    <script defer src="form-validate.js"></script>
 </head>
 
 <body>
@@ -180,11 +181,13 @@
                 I'm always interested in hearing about new projects,
                 so if you'd like to chat please get in touch.
             </p>
-            <form action="https://formspree.io/f/moqzvwoo" method="POST">
+            <!---->
+            <form action="https://formspree.io/f/moqzvwoo" method="POST" id="form">
                 <input type="text" id="name" name="user_name" placeholder="Full name" required maxlength="30"/>
                 <input type="email" name="user_email" id="email" placeholder="Email address" required>
-                <textarea name="comment" id="comment" placeholder='Enter text here' required maxlength="500"></textarea>
-                <button type="submit" class="buttonCol"><span>Get in Touch</span></button>
+                <small id="emailMessage"></small>
+                <textarea id="sub" name="comment" id="comment" placeholder='Enter text here' required maxlength="500"></textarea>
+                <button type="submit"  class="buttonCol"><span>Get in Touch</span></button>
             </form>
 
             <section class='social-icons icon mobile'>
