@@ -1,5 +1,5 @@
-const form = document.forms[0];
-const email = form.elements["email"];
+const form = document.querySelector('form');
+const email = form.elements.email;
 const displayMessage = document.querySelector('#emailMessage');
 
 /**
@@ -20,6 +20,7 @@ function validateEmail() {
     displayMessage.innerText = '';
     return true;
   }
+  return true;
 }
 
 form.addEventListener('submit', (e) => {
