@@ -70,7 +70,7 @@ function definir() {
   console.log(JSON.stringify(sessionForm));
 }
 
-/*window.addEventListener('load', () => {
+window.addEventListener('load', () => {
   if (storageAvailable('localStorage')) {
     if(localStorage.getItem('session')) {
       take();
@@ -80,4 +80,4 @@ function definir() {
 
 email.addEventListener('change', definir);
 nameF.addEventListener('change', definir);
-textarea.addEventListener('change', definir);*/
+textarea.addEventListener('change', definir);
