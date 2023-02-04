@@ -3,7 +3,7 @@ const email = document.querySelector('#email');
 const displayMessage = document.querySelector('#emailMessage');
 const nameF = document.querySelector('#name');
 const textarea = document.querySelector('#comment');
-let sessionForm = { emailForm: '', nameForm: '', textareaForm: ''};
+const sessionForm = { emailForm: '', nameForm: '', textareaForm: '' };
 
 /**
  * Function
@@ -40,6 +40,7 @@ form.addEventListener('submit', (e) => {
 
 function storageAvailable(type) {
   let storage;
+  let e;
   try {
     storage = window[type];
     const x = '_test_';
@@ -47,11 +48,11 @@ function storageAvailable(type) {
     storage.removeItem(x);
     return true;
   } catch {
-    return e instanceof DOMException &&(
-    e.code === 22 ||
-    e.code === 1014 ||
-    e.name === 'QuotaExceededError' ||
-    e.name === 'NS_ERROR_DOM_QUOTA_REACHED') && (storage && storage.length !== 0);
+    return e instanceof DOMException && (
+      e.code === 22 ||
+      e.code === 1014 ||
+      e.name === 'QuotaExceededError' ||
+      e.name === 'NS_ERROR_DOM_QUOTA_REACHED') && (storage && storage.length !== 0);
   }
 }
 
@@ -67,12 +68,11 @@ function definir() {
   sessionForm.nameForm = nameF.value;
   sessionForm.textareaForm = textarea.value;
   localStorage.setItem('session', JSON.stringify(sessionForm));
-  console.log(JSON.stringify(sessionForm));
 }
 
 window.addEventListener('load', () => {
   if (storageAvailable('localStorage')) {
-    if(localStorage.getItem('session')) {
+    if (localStorage.getItem('session')) {
       take();
     }
   }
