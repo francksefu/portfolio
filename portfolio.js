@@ -493,7 +493,8 @@ function loadingI() {
   divtitle.appendChild(h1);
   h1.innerHTML = 'My Recent<br> Works';
   divtitle.appendChild(divbar);
-
+// add table for data
+  data = []
   for (let j = 0; j < 6; j += 1) {
     const id = 'i'.concat(j);
     const divArticle = document.createElement('div');
