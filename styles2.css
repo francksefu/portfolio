@@ -315,6 +315,16 @@ section.recentWork > div > article > div {
   height: 45vh;
 }
 
+.vide > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.img-fit img{
+  object-fit: contain;
+}
+
 section.recentWork > div > article > div.detail {
   display: flex;
   flex-direction: column;

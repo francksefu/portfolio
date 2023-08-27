@@ -46,31 +46,7 @@ x.addEventListener('click', displ);
 
 /** Content (style of div, p and soon) */
 
-const mainContent1 = [
-  { mainImg: { alt: 'project picture', src: 'imgSeeP/Snapshoot Portfolio.png' } },
-  { h2: { textContent: 'Keeping track of hundreds of components' } },
-  { ul_li_content: ['Ruby on rails', 'css', 'JavaScript'] },
-  {
-    p_textcontent: `
-  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
-  text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea
-  `,
-  },
-  { button: { see_Project_href: '#', see_Source_href: '#' } },
-];
 
-const mainContentD = [
-  { mainImg: { alt: 'project picture desktop', src: 'imgSeeP/desktop-img-main.png' } },
-  { h2: { textContent: 'Keeping track of hundreds of components' } },
-  { ul_li_content: ['Codekit', 'GitHub', 'JavaScript', 'Bootstrap', 'Terminal', 'Codepen'] },
-  {
-    p_textcontent: `
-      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
-      text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea
-      `,
-  },
-  { button: { see_Project_href: '#', see_Source_href: '#' } },
-];
 function deleteChild(e) {
   let child = e.lastElementChild;
   while (child) {
@@ -494,7 +470,100 @@ function loadingI() {
   h1.innerHTML = 'My Recent<br> Works';
   divtitle.appendChild(divbar);
 // add table for data
-  data = []
+  description_project1 = `
+  In this project I just built the front end part and backend
+  of a management web application (For commerce). Also note that we
+  will use a client-server environment in the same machine. 
+  `;
+  let project1 = {
+    name: "Pharmacie Maria",
+    photo: "./picture_project/maria.png",
+    decription: description_project1,
+    link: "https://youtu.be/GXfj4Nc1BYU",
+    stack: ['JavaScript', 'HTML', 'CSS', 'Bootstrap', 'PHP']
+  }
+
+  let description_project2 = `
+  This React capstone project (remember what they are?)is about 
+  building a mobile web application to check a list of metrics 
+  (numeric values) that you will create making use of React and Redux.
+  I was select an API that provides numeric data about finance and then 
+  build the webapp around it.
+  `;
+  let project2 = {
+    name: "Collect Data",
+    photo: "./picture_project/capstone_R.png",
+    decription: description_project2,
+    link: "unrivaled-basbousa-5981a9.netlify.app/",
+    stack: ['React', 'Redux', 'Bootstrap', 'Git', 'GitHub']
+  }
+
+  let description_project3 = `
+  This JavaScript capstone project is about building your own web application
+   based on an external API, It is a restaurant application that shows us the
+  dishes, allows us to like these dishes and even to comment on everything thanks 
+  to communication with an API
+  `;
+  let project3 = {
+    name: "Franck_Ezra restaurant",
+    photo: "./picture_project/franck_ezra.png",
+    decription: description_project3,
+    link: "https://github.com/francksefu/franck-ezra-capstone",
+    stack: ['Webpack', 'JavaScript', 'Html/Css', 'Bootstrap 5', 'Git', 'GitHub']
+  };
+
+  let description_project4 = `
+  What you have here is a portfolio of a civil engineering company, as for any portfolio, 
+  inside we put their work there and we talked a little about them and added a small form 
+  to contact them.
+  `;
+  let project4 = {
+    name: "BICC2022",
+    photo: "./picture_project/bicc.png",
+    decription: description_project4,
+    link: "https://francksefu.github.io/Capstone-project/",
+    stack: ['JavaScript', 'Html/Css', 'Bootstrap 5', 'Git', 'GitHub']
+  };
+
+  let description_project5 = `
+  In this project, we was working with the real live data from the SpaceX API. 
+  the task was to build a web application for a company that provides commercial and 
+  scientific space travel services. 
+  The application allow users to book rockets and join selected space missions.
+  `;
+  let project5 = {
+    name: "Space Travel",
+    photo: "./picture_project/space.png",
+    decription: description_project5,
+    link: "https://github.com/Ali-0111/react-group-2",
+    stack: ['React', 'Bootstrap 5', 'Gitflow', 'GitHub']
+  };
+
+  let description_project6 = `
+  In this project I just built the front end part and backend
+  of a management web application (For commerce). Also note that we
+  will use a client-server environment in the same machine. 
+  `;
+  let project6 = {
+    name: "Pharmacie Maria",
+    photo: "./picture_project/maria.png",
+    decription: description_project6,
+    link: "https://youtu.be/GXfj4Nc1BYU",
+    stack: ['JavaScript', 'HTML', 'CSS', 'Bootstrap', 'PHP']
+  }
+
+  // see content of project
+  
+  
+  
+  //content desk top click see project
+  
+  
+
+  //
+
+  const table_project = [project1, project2, project3, project4, project5, project6];
+
   for (let j = 0; j < 6; j += 1) {
     const id = 'i'.concat(j);
     const divArticle = document.createElement('div');
@@ -508,6 +577,13 @@ function loadingI() {
     const spanButton = document.createElement('span');
     divArticle.classList.add('look');
     divVide.classList.add('vide');
+
+    // add image
+    const img = document.createElement('img');
+    img.src = table_project[j].photo;
+    img.classList.add('image_p');
+    divVide.appendChild(img)
+
     divDetail.classList.add('detail');
     divRHeader.classList.add('rHeader');
     ul.classList.add('language');
@@ -519,16 +595,15 @@ function loadingI() {
     article1.appendChild(divVide);
     article1.appendChild(divDetail);
     divDetail.appendChild(divRHeader);
-    h2.innerHTML = 'Multi-Post Stories<br> Gain+Glory';
+    h2.innerHTML = table_project[j].name;
     divRHeader.appendChild(h2);
     divDetail.appendChild(ul);
-    const tab = ['Ruby on rails', 'css', 'JavaScript', 'html'];
 
-    for (let i = 0; i < tab.length; i += 1) {
+    for (let i = 0; i < table_project[j].stack.length; i += 1) {
       const li = document.createElement('li');
       const span = document.createElement('span');
       li.appendChild(span);
-      span.textContent = tab[i];
+      span.textContent = table_project[j].stack[i];
       ul.appendChild(li);
     }
 
@@ -537,6 +612,119 @@ function loadingI() {
     spanButton.textContent = 'See Project';
   }
 }
+
+/**When we click at the see button  */
+
+function content_of_projet(projet) {
+  const mainContent1 = [
+    { mainImg: { alt: 'project picture', src: 'imgSeeP/Snapshoot Portfolio.png' } },
+    { h2: { textContent: projet.name } },
+    { ul_li_content: projet.stack },
+    {
+      p_textcontent: projet.description,
+    },
+    { button: { see_Project_href: projet.link, see_Source_href: projet.link2 } },
+  ];
+
+  const mainContentD = [
+    { mainImg: { alt: 'project picture desktop', src: projet.photo } },
+    { h2: { textContent: projet.name } },
+    { ul_li_content: projet.stack },
+    {
+      p_textcontent: projet.description,
+    },
+    { button: { see_Project_href: projet.link, see_Source_href: projet.link2 } },
+  ];
+  return [mainContent1, mainContentD]
+}
+
+let description_project1 = `
+  In this project I just built the front end part and backend
+  of a management web application (For commerce). Also note that we
+  will use a client-server environment in the same machine. 
+  `;
+  let project1 = {
+    name: "Pharmacie Maria",
+    photo: "./picture_project/maria.png",
+    description: description_project1,
+    link: "https://youtu.be/GXfj4Nc1BYU",
+    link2: "https://github.com/francksefu/Pharmacie-Maria",
+    stack: ['JavaScript', 'HTML', 'CSS', 'Bootstrap', 'PHP']
+  }
+
+  let description_project2 = `
+  This React capstone project (remember what they are?)is about 
+  building a mobile web application to check a list of metrics 
+  (numeric values) that you will create making use of React and Redux.
+  I was select an API that provides numeric data about finance and then 
+  build the webapp around it.
+  `;
+  let project2 = {
+    name: "Collect Data",
+    photo: "./picture_project/capstone_R.png",
+    description: description_project2,
+    link: "unrivaled-basbousa-5981a9.netlify.app/",
+    link2: "https://github.com/francksefu/capstone-react",
+    stack: ['React', 'Redux', 'Bootstrap', 'Git', 'GitHub']
+  }
+
+  let description_project3 = `
+  This JavaScript capstone project is about building your own web application
+   based on an external API, It is a restaurant application that shows us the
+  dishes, allows us to like these dishes and even to comment on everything thanks 
+  to communication with an API
+  `;
+  let project3 = {
+    name: "Franck_Ezra restaurant",
+    photo: "./picture_project/franck_ezra.png",
+    description: description_project3,
+    link: "https://github.com/francksefu/franck-ezra-capstone",
+    link2: "https://github.com/francksefu/franck-ezra-capstone",
+    stack: ['Webpack', 'JavaScript', 'Html/Css', 'Bootstrap 5', 'Git', 'GitHub']
+  };
+
+  let description_project4 = `
+  What you have here is a portfolio of a civil engineering company, as for any portfolio, 
+  inside we put their work there and we talked a little about them and added a small form 
+  to contact them.
+  `;
+  let project4 = {
+    name: "BICC2022",
+    photo: "./picture_project/bicc.png",
+    description: description_project4,
+    link: "https://francksefu.github.io/Capstone-project/",
+    link2: "https://github.com/BICC2022/portfolio",
+    stack: ['JavaScript', 'Html/Css', 'Bootstrap 5', 'Git', 'GitHub']
+  };
+
+  let description_project5 = `
+  In this project, we was working with the real live data from the SpaceX API. 
+  the task was to build a web application for a company that provides commercial and 
+  scientific space travel services. 
+  The application allow users to book rockets and join selected space missions.
+  `;
+  let project5 = {
+    name: "Space Travel",
+    photo: "./picture_project/space.png",
+    description: description_project5,
+    link: "https://github.com/Ali-0111/react-group-2",
+    link2: "https://github.com/Ali-0111/react-group-2",
+    stack: ['React', 'Bootstrap 5', 'Gitflow', 'GitHub']
+  };
+
+  let description_project6 = `
+  In this project I just built the front end part and backend
+  of a management web application (For commerce). Also note that we
+  will use a client-server environment in the same machine. 
+  `;
+  let project6 = {
+    name: "Pharmacie Maria",
+    photo: "./picture_project/p6.png",
+    description: description_project6,
+    link: "https://youtu.be/GXfj4Nc1BYU",
+    link2: "https://github.com/francksefu/Pharmacie-Maria",
+    stack: ['JavaScript', 'HTML', 'CSS', 'Bootstrap', 'PHP']
+  }
 
 window.addEventListener('load', () => {
   loadingI();
@@ -561,66 +749,71 @@ window.addEventListener('load', () => {
   but0.addEventListener('click', () => {
     main.style.filter = 'blur(5px)';
     deleteChild(div0);
-
+    div0.classList.add('img-fit');
     if (div0.style.display === 'flex') {
       div0.style.display = 'none';
     } else {
       div0.style.display = 'flex';
     }
-    project(but0, mainContent1, mainContentD, div0);
+    project(but0, content_of_projet(project1)[0], content_of_projet(project1)[1], div0);
   });
 
   but1.addEventListener('click', () => {
     main.style.filter = 'blur(5px)';
     deleteChild(div1);
+    div1.classList.add('img-fit');
     if (div1.style.display === 'flex') {
       div1.style.display = 'none';
     } else {
       div1.style.display = 'flex';
     }
-    project(but1, mainContent1, mainContentD, div1);
+    project(but1, content_of_projet(project2)[0], content_of_projet(project2)[1], div1);
   });
   but2.addEventListener('click', () => {
     main.style.filter = 'blur(5px)';
     deleteChild(div2);
+    div2.classList.add('img-fit');
     if (div2.style.display === 'flex') {
       div2.style.display = 'none';
     } else {
       div2.style.display = 'flex';
     }
-    project(but2, mainContent1, mainContentD, div2);
+    project(but2, content_of_projet(project3)[0], content_of_projet(project3)[1], div2);
   });
   but3.addEventListener('click', () => {
     main.style.filter = 'blur(5px)';
     deleteChild(div3);
+    div3.classList.add('img-fit');
     if (div3.style.display === 'flex') {
       div3.style.display = 'none';
     } else {
       div3.style.display = 'flex';
     }
 
-    project(but3, mainContent1, mainContentD, div3);
+    project(but3, content_of_projet(project4)[0], content_of_projet(project4)[1], div3);
   });
   but4.addEventListener('click', () => {
     main.style.filter = 'blur(5px)';
     deleteChild(div4);
+    div4.classList.add('img-fit');
     if (div4.style.display === 'flex') {
       div4.style.display = 'none';
     } else {
       div4.style.display = 'flex';
     }
 
-    project(but4, mainContent1, mainContentD, div4);
+    project(but4, content_of_projet(project5)[0], content_of_projet(project5)[1], div4);
   });
   but5.addEventListener('click', () => {
     main.style.filter = 'blur(5px)';
     deleteChild(div5);
+    div5.classList.add('img-fit');
     if (div5.style.display === 'flex') {
       div5.style.display = 'none';
     } else {
       div5.style.display = 'flex';
     }
 
-    project(but5, mainContent1, mainContentD, div5);
+    project(but5, content_of_projet(project6)[0], content_of_projet(project6)[1], div5);
   });
 });
