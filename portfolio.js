@@ -588,7 +588,6 @@ function loadingI() {
     divRHeader.classList.add('rHeader');
     ul.classList.add('language');
     buttonCol.classList.add('buttonCol');
-    //buttonCol.href = './picture_project/resume.pdf'
     buttonCol.classList.add('.ecoute');
     buttonCol.setAttribute('id', id);
     section.appendChild(divArticle);
@@ -618,7 +617,7 @@ function loadingI() {
 
 function content_of_projet(projet) {
   const mainContent1 = [
-    { mainImg: { alt: 'project picture', src: 'imgSeeP/Snapshoot Portfolio.png' } },
+    { mainImg: { alt: 'project picture', src: projet.photo } },
     { h2: { textContent: projet.name } },
     { ul_li_content: projet.stack },
     {
