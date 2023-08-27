@@ -325,6 +325,10 @@ section.recentWork > div > article > div {
   object-fit: contain;
 }
 
+span > a {
+  color: white;
+}
+
 section.recentWork > div > article > div.detail {
   display: flex;
   flex-direction: column;

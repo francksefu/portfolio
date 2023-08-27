@@ -588,6 +588,7 @@ function loadingI() {
     divRHeader.classList.add('rHeader');
     ul.classList.add('language');
     buttonCol.classList.add('buttonCol');
+    //buttonCol.href = './picture_project/resume.pdf'
     buttonCol.classList.add('.ecoute');
     buttonCol.setAttribute('id', id);
     section.appendChild(divArticle);
