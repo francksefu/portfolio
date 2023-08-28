@@ -130,10 +130,10 @@ function project(buttonCheckProject, mainContent, mainContentD, div) {
 
   const cross = {
 
-    css: 'width: 24px; height: 24px; visibility: hidden;',
-    src: 'imgSeeP/Icon - Cancel.png',
+    css: 'width: 30px; height: 30px;',
+    src: 'imgSeeP/cancel.png',
     alt: 'cancel',
-    cssSpan: `width: 10%; height: 10%; background-color: transparent;
+    cssSpan: `width: 10%; height: 7%; background-color: transparent;
     position: absolute; top: 59px; left: 78.5%`,
   };
 
